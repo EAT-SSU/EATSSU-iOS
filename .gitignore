@@ -88,3 +88,13 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# 팀에서 추가한 내용
+
+.DS_Store
+
+# Xcode Configuration Files
+*.xcconfig
+
+# Firebase Property List
+GoogleService-Info.plist
