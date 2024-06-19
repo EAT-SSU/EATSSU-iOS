@@ -31,7 +31,7 @@
 ## **커밋 메세지 Description**
 
 ``` zsh
-[Commit Type] 이슈번호 해당 커밋 요약
+[이슈번호] 커밋메시지
 ### Description
 - [Setting] #1 Project Setting
 - [Feat] #2 Add AlermBar
