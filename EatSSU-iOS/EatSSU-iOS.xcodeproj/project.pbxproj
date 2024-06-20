@@ -147,12 +147,10 @@
 		7BFD09C12A21EE3E00B40054 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD09C02A21EE3E00B40054 /* HomeRouter.swift */; };
 		DA5F4B702C192CA8009469C4 /* BaseUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */; };
 		DA83B3E82C18587200F41DB8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA83B3E72C18587200F41DB8 /* RealmSwift */; };
+		DAACFF042C244BDC00763006 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF032C244BDC00763006 /* RxCocoa */; };
+		DAACFF062C244BDC00763006 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF052C244BDC00763006 /* RxSwift */; };
 		DAC1DF692C18FE6F00AEDDD3 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1DF682C18FE6F00AEDDD3 /* SwiftFormat */; };
 		DAC1DF6B2C18FE6F00AEDDD3 /* SwiftFormatConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1DF6A2C18FE6F00AEDDD3 /* SwiftFormatConfiguration */; };
-		DAF4AA802C240EB000B2B184 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DAF4AA7F2C240EB000B2B184 /* RxCocoa */; };
-		DAF4AA822C240EB000B2B184 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAF4AA812C240EB000B2B184 /* RxSwift */; };
-		DAF4AA842C240EE300B2B184 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = DAF4AA832C240EE300B2B184 /* RxCocoa-Dynamic */; };
-		DAF4AA862C240EE300B2B184 /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = DAF4AA852C240EE300B2B184 /* RxSwift-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -293,9 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B6B73C92BBC789300D11D73 /* KakaoSDKCommon in Frameworks */,
-				DAF4AA842C240EE300B2B184 /* RxCocoa-Dynamic in Frameworks */,
 				7B6E35492B91C06B004F00EE /* FirebaseRemoteConfig in Frameworks */,
-				DAF4AA822C240EB000B2B184 /* RxSwift in Frameworks */,
+				DAACFF062C244BDC00763006 /* RxSwift in Frameworks */,
 				7BD73CD429D208940076DC77 /* Then in Frameworks */,
 				051F7E6E2A78FD8500CE9F87 /* Kingfisher in Frameworks */,
 				DAC1DF6B2C18FE6F00AEDDD3 /* SwiftFormatConfiguration in Frameworks */,
@@ -304,7 +301,6 @@
 				056956C229C0DB55002E8CF2 /* Moya in Frameworks */,
 				05077DC12BB495E900017346 /* GoogleAppMeasurement in Frameworks */,
 				7B6B73CB2BBC789300D11D73 /* KakaoSDKUser in Frameworks */,
-				DAF4AA862C240EE300B2B184 /* RxSwift-Dynamic in Frameworks */,
 				DA83B3E82C18587200F41DB8 /* RealmSwift in Frameworks */,
 				05077DC52BB495E900017346 /* GoogleAppMeasurementWithoutAdIdSupport in Frameworks */,
 				0569565C29B25D40002E8CF2 /* Tabman in Frameworks */,
@@ -313,7 +309,7 @@
 				05077DC32BB495E900017346 /* GoogleAppMeasurementOnDeviceConversion in Frameworks */,
 				7B6E35472B91C06B004F00EE /* FirebaseAnalytics in Frameworks */,
 				7B6B73C72BBC789300D11D73 /* KakaoSDKAuth in Frameworks */,
-				DAF4AA802C240EB000B2B184 /* RxCocoa in Frameworks */,
+				DAACFF042C244BDC00763006 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,10 +880,8 @@
 				DA83B3E72C18587200F41DB8 /* RealmSwift */,
 				DAC1DF682C18FE6F00AEDDD3 /* SwiftFormat */,
 				DAC1DF6A2C18FE6F00AEDDD3 /* SwiftFormatConfiguration */,
-				DAF4AA7F2C240EB000B2B184 /* RxCocoa */,
-				DAF4AA812C240EB000B2B184 /* RxSwift */,
-				DAF4AA832C240EE300B2B184 /* RxCocoa-Dynamic */,
-				DAF4AA852C240EE300B2B184 /* RxSwift-Dynamic */,
+				DAACFF032C244BDC00763006 /* RxCocoa */,
+				DAACFF052C244BDC00763006 /* RxSwift */,
 			);
 			productName = "EatSSU-iOS";
 			productReference = 7B2BBF92299A1AC400EE0F1F /* EAT-SSU.app */;
@@ -929,7 +923,7 @@
 				05077DBF2BB495E800017346 /* XCRemoteSwiftPackageReference "GoogleAppMeasurement" */,
 				DA83B3E62C18587200F41DB8 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				DAC1DF672C18FE6F00AEDDD3 /* XCRemoteSwiftPackageReference "swift-format" */,
-				DAF4AA7E2C240EB000B2B184 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				DAACFF022C244BDC00763006 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 7B2BBF93299A1AC400EE0F1F /* Products */;
 			projectDirPath = "";
@@ -1417,20 +1411,20 @@
 				minimumVersion = 10.51.0;
 			};
 		};
+		DAACFF022C244BDC00763006 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
 		DAC1DF672C18FE6F00AEDDD3 /* XCRemoteSwiftPackageReference "swift-format" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-format";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 510.1.0;
-			};
-		};
-		DAF4AA7E2C240EB000B2B184 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.7.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1513,6 +1507,16 @@
 			package = DA83B3E62C18587200F41DB8 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
+		DAACFF032C244BDC00763006 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAACFF022C244BDC00763006 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		DAACFF052C244BDC00763006 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAACFF022C244BDC00763006 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		DAC1DF682C18FE6F00AEDDD3 /* SwiftFormat */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DAC1DF672C18FE6F00AEDDD3 /* XCRemoteSwiftPackageReference "swift-format" */;
@@ -1522,26 +1526,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DAC1DF672C18FE6F00AEDDD3 /* XCRemoteSwiftPackageReference "swift-format" */;
 			productName = SwiftFormatConfiguration;
-		};
-		DAF4AA7F2C240EB000B2B184 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DAF4AA7E2C240EB000B2B184 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		DAF4AA812C240EB000B2B184 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DAF4AA7E2C240EB000B2B184 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		DAF4AA832C240EE300B2B184 /* RxCocoa-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DAF4AA7E2C240EB000B2B184 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxCocoa-Dynamic";
-		};
-		DAF4AA852C240EE300B2B184 /* RxSwift-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DAF4AA7E2C240EB000B2B184 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxSwift-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
