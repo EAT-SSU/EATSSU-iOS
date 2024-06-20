@@ -31,10 +31,10 @@
 ## **커밋 메세지 Description**
 
 ``` zsh
-[이슈번호] 커밋메시지
+[#이슈번호] 커밋메시지
 ### Description
-- [Setting] #1 Project Setting
-- [Feat] #2 Add AlermBar
+- [#1] Project Setting
+- [#2] Add AlermBar
 ```
 
 ## **Code Convention**
