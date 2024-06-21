@@ -484,6 +484,7 @@
 		7B2BBF89299A1AC400EE0F1F = {
 			isa = PBXGroup;
 			children = (
+				7B7E7C5D2C25764B004AFA89 /* Migration */,
 				DA0A353B2C2252070097CFE0 /* Configurations */,
 				7B2BBF94299A1AC400EE0F1F /* EatSSU-iOS */,
 				7B2BBF93299A1AC400EE0F1F /* Products */,
@@ -632,6 +633,133 @@
 				7B6E35552B984BA6004F00EE /* NoticeViewController.swift */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		7B7E7C5D2C25764B004AFA89 /* Migration */ = {
+			isa = PBXGroup;
+			children = (
+				7B7E7C5F2C2576A7004AFA89 /* Source */,
+				7B7E7C5E2C25769B004AFA89 /* Resource */,
+			);
+			path = Migration;
+			sourceTree = "<group>";
+		};
+		7B7E7C5E2C25769B004AFA89 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7B7E7C5F2C2576A7004AFA89 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7B7E7C642C2576C9004AFA89 /* App */,
+				7B7E7C632C2576C3004AFA89 /* Domain */,
+				7B7E7C622C2576BD004AFA89 /* Presentation */,
+				7B7E7C612C2576B9004AFA89 /* Data */,
+				7B7E7C602C2576B6004AFA89 /* Core */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		7B7E7C602C2576B6004AFA89 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7B7E7C6C2C257735004AFA89 /* Base */,
+				7B7E7C6B2C257732004AFA89 /* Extension */,
+				7B7E7C6A2C25772F004AFA89 /* Enum */,
+				7B7E7C692C257724004AFA89 /* Util */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7B7E7C612C2576B9004AFA89 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7B7E7C622C2576BD004AFA89 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7B7E7C682C257708004AFA89 /* Auth */,
+				7B7E7C672C2576FE004AFA89 /* Home */,
+				7B7E7C662C2576F8004AFA89 /* Review */,
+				7B7E7C652C2576F0004AFA89 /* MyPage */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7B7E7C632C2576C3004AFA89 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7B7E7C642C2576C9004AFA89 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7B7E7C652C2576F0004AFA89 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		7B7E7C662C2576F8004AFA89 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		7B7E7C672C2576FE004AFA89 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7B7E7C682C257708004AFA89 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		7B7E7C692C257724004AFA89 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		7B7E7C6A2C25772F004AFA89 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		7B7E7C6B2C257732004AFA89 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7B7E7C6C2C257735004AFA89 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		7B906AF02A1B847700E4B6A9 /* MyPage */ = {
