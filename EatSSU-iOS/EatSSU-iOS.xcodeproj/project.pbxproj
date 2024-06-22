@@ -168,6 +168,9 @@
 		DA13BCBD2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCBC2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift */; };
 		DA13BCBF2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCBE2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift */; };
 		DA5F4B702C192CA8009469C4 /* BaseUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */; };
+		DA8137E02C26B895000612EC /* MigratedMyPageServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137DF2C26B895000612EC /* MigratedMyPageServiceCell.swift */; };
+		DA8137EF2C26BB25000612EC /* MigratedMyPageLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137EE2C26BB25000612EC /* MigratedMyPageLocalData.swift */; };
+		DA8137F12C26BB9D000612EC /* MigratedMyPageRightItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137F02C26BB9D000612EC /* MigratedMyPageRightItemData.swift */; };
 		DA83B3E82C18587200F41DB8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA83B3E72C18587200F41DB8 /* RealmSwift */; };
 		DAACFF042C244BDC00763006 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF032C244BDC00763006 /* RxCocoa */; };
 		DAACFF062C244BDC00763006 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF052C244BDC00763006 /* RxSwift */; };
@@ -325,6 +328,9 @@
 		DA13BCBC2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedDeleteAccountConfirmation.swift; sourceTree = "<group>"; };
 		DA13BCBE2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedDeleteAccountConfirmationViewController.swift; sourceTree = "<group>"; };
 		DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUINavigationBar.swift; sourceTree = "<group>"; };
+		DA8137DF2C26B895000612EC /* MigratedMyPageServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyPageServiceCell.swift; sourceTree = "<group>"; };
+		DA8137EE2C26BB25000612EC /* MigratedMyPageLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyPageLocalData.swift; sourceTree = "<group>"; };
+		DA8137F02C26BB9D000612EC /* MigratedMyPageRightItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyPageRightItemData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -719,7 +725,7 @@
 				7B7E7C682C257708004AFA89 /* Auth */,
 				7B7E7C672C2576FE004AFA89 /* Home */,
 				7B7E7C662C2576F8004AFA89 /* Review */,
-				7B7E7C652C2576F0004AFA89 /* MyPageView */,
+				7B7E7C652C2576F0004AFA89 /* MyPage */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -741,14 +747,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		7B7E7C652C2576F0004AFA89 /* MyPageView */ = {
+		7B7E7C652C2576F0004AFA89 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
-				DA13BCA62C26B0D60083244A /* MigratedMyPage.swift */,
-				DA13BCA82C26B0E00083244A /* MigratedMyPageViewController.swift */,
+				DA8137E12C26B964000612EC /* View */,
+				DA8137E32C26BA3E000612EC /* ViewModel */,
 				DA13BCAA2C26B0F60083244A /* SubViews */,
 			);
-			path = MyPageView;
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		7B7E7C662C2576F8004AFA89 /* Review */ = {
@@ -1057,8 +1063,8 @@
 		DA13BCB12C26B1620083244A /* MyReview */ = {
 			isa = PBXGroup;
 			children = (
-				DA13BCAB2C26B1290083244A /* MigratedMyReview.swift */,
-				DA13BCAD2C26B13E0083244A /* MigratedMyReviewViewController.swift */,
+				DA8137E22C26BA12000612EC /* View */,
+				DA8137E42C26BA47000612EC /* ViewModel */,
 			);
 			path = MyReview;
 			sourceTree = "<group>";
@@ -1066,8 +1072,8 @@
 		DA13BCB32C26B1710083244A /* Provision */ = {
 			isa = PBXGroup;
 			children = (
-				DA13BCAF2C26B1570083244A /* MigratedProvision.swift */,
-				DA13BCB42C26B1840083244A /* MigratedProvisionViewController.swift */,
+				DA8137E72C26BA5C000612EC /* View */,
+				DA8137E62C26BA57000612EC /* ViewModel */,
 			);
 			path = Provision;
 			sourceTree = "<group>";
@@ -1075,8 +1081,8 @@
 		DA13BCB62C26B1890083244A /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				DA13BCB82C26B1C10083244A /* MigratedRequest.swift */,
-				DA13BCBA2C26B1CB0083244A /* MigratedRequestViewController.swift */,
+				DA8137EA2C26BA75000612EC /* View */,
+				DA8137E82C26BA68000612EC /* ViewModel */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1084,10 +1090,101 @@
 		DA13BCB72C26B1950083244A /* DeletaAccountConfirmation */ = {
 			isa = PBXGroup;
 			children = (
+				DA8137EB2C26BA7F000612EC /* View */,
+				DA8137EC2C26BA84000612EC /* ViewModel */,
+			);
+			path = DeletaAccountConfirmation;
+			sourceTree = "<group>";
+		};
+		DA8137E12C26B964000612EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA8137DF2C26B895000612EC /* MigratedMyPageServiceCell.swift */,
+				DA8137ED2C26BB0D000612EC /* MyPageModel */,
+				DA13BCA62C26B0D60083244A /* MigratedMyPage.swift */,
+				DA13BCA82C26B0E00083244A /* MigratedMyPageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA8137E22C26BA12000612EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA13BCAB2C26B1290083244A /* MigratedMyReview.swift */,
+				DA13BCAD2C26B13E0083244A /* MigratedMyReviewViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA8137E32C26BA3E000612EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA8137E42C26BA47000612EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA8137E62C26BA57000612EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA8137E72C26BA5C000612EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA13BCAF2C26B1570083244A /* MigratedProvision.swift */,
+				DA13BCB42C26B1840083244A /* MigratedProvisionViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA8137E82C26BA68000612EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA8137EA2C26BA75000612EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA13BCB82C26B1C10083244A /* MigratedRequest.swift */,
+				DA13BCBA2C26B1CB0083244A /* MigratedRequestViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA8137EB2C26BA7F000612EC /* View */ = {
+			isa = PBXGroup;
+			children = (
 				DA13BCBC2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift */,
 				DA13BCBE2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift */,
 			);
-			path = DeletaAccountConfirmation;
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA8137EC2C26BA84000612EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA8137ED2C26BB0D000612EC /* MyPageModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA8137EE2C26BB25000612EC /* MigratedMyPageLocalData.swift */,
+				DA8137F02C26BB9D000612EC /* MigratedMyPageRightItemData.swift */,
+			);
+			path = MyPageModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1223,6 +1320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05A4C88429DFE42A004B9A81 /* UIStackView+.swift in Sources */,
+				DA8137EF2C26BB25000612EC /* MigratedMyPageLocalData.swift in Sources */,
 				7B9363FD2A9E35CC00D93518 /* RestaurantInfoViewController.swift in Sources */,
 				7BF5CC122A49F65400E4EE11 /* TextLiteral.swift in Sources */,
 				051CFA5E2A8A3EAF0023B3C6 /* MyInfoResponse.swift in Sources */,
@@ -1230,6 +1328,7 @@
 				7B7E7C7A2C257810004AFA89 /* H.swift in Sources */,
 				7B08C3A12AFB9D570011F179 /* NIcknameTextFieldResultType.swift in Sources */,
 				7BF5CC3C2A53DD0600E4EE11 /* PostUIButton.swift in Sources */,
+				DA8137F12C26BB9D000612EC /* MigratedMyPageRightItemData.swift in Sources */,
 				7B9998F12A827B590043C592 /* HomeCalendarView.swift in Sources */,
 				7BBE03832C26704300AD6C76 /* M_ImageLiteral.swift in Sources */,
 				051836262B13461A00D4FB81 /* ReviewEmptyViewCell.swift in Sources */,
@@ -1313,6 +1412,7 @@
 				052555B82C0DEB7400D38E34 /* DeleteAccountConfirmationView.swift in Sources */,
 				7B7E7C702C2577ED004AFA89 /* B.swift in Sources */,
 				056956FD29CB7958002E8CF2 /* ReviewTableCell.swift in Sources */,
+				DA8137E02C26B895000612EC /* MigratedMyPageServiceCell.swift in Sources */,
 				7B7E7C782C25780D004AFA89 /* I.swift in Sources */,
 				7B203D3B2B0A1AE700059512 /* ProvisionView.swift in Sources */,
 				056956FF29CB81E2002E8CF2 /* SetRateViewController.swift in Sources */,
