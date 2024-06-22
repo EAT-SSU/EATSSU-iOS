@@ -157,7 +157,16 @@
 		7BF5CC3C2A53DD0600E4EE11 /* PostUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF5CC3B2A53DD0600E4EE11 /* PostUIButton.swift */; };
 		7BFD09BF2A21E6E400B40054 /* FixedMenuTableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD09BE2A21E6E400B40054 /* FixedMenuTableResponse.swift */; };
 		7BFD09C12A21EE3E00B40054 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD09C02A21EE3E00B40054 /* HomeRouter.swift */; };
-		DA13BC9B2C26A64C0083244A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BC9A2C26A64C0083244A /* View.swift */; };
+		DA13BCA72C26B0D60083244A /* MigratedMyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCA62C26B0D60083244A /* MigratedMyPage.swift */; };
+		DA13BCA92C26B0E00083244A /* MigratedMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCA82C26B0E00083244A /* MigratedMyPageViewController.swift */; };
+		DA13BCAC2C26B1290083244A /* MigratedMyReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCAB2C26B1290083244A /* MigratedMyReview.swift */; };
+		DA13BCAE2C26B13E0083244A /* MigratedMyReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCAD2C26B13E0083244A /* MigratedMyReviewViewController.swift */; };
+		DA13BCB02C26B1570083244A /* MigratedProvision.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCAF2C26B1570083244A /* MigratedProvision.swift */; };
+		DA13BCB52C26B1840083244A /* MigratedProvisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCB42C26B1840083244A /* MigratedProvisionViewController.swift */; };
+		DA13BCB92C26B1C10083244A /* MigratedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCB82C26B1C10083244A /* MigratedRequest.swift */; };
+		DA13BCBB2C26B1CB0083244A /* MigratedRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCBA2C26B1CB0083244A /* MigratedRequestViewController.swift */; };
+		DA13BCBD2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCBC2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift */; };
+		DA13BCBF2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCBE2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift */; };
 		DA5F4B702C192CA8009469C4 /* BaseUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */; };
 		DA83B3E82C18587200F41DB8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA83B3E72C18587200F41DB8 /* RealmSwift */; };
 		DAACFF042C244BDC00763006 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF032C244BDC00763006 /* RxCocoa */; };
@@ -305,7 +314,16 @@
 		7BF5CC3B2A53DD0600E4EE11 /* PostUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUIButton.swift; sourceTree = "<group>"; };
 		7BFD09BE2A21E6E400B40054 /* FixedMenuTableResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedMenuTableResponse.swift; sourceTree = "<group>"; };
 		7BFD09C02A21EE3E00B40054 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		DA13BC9A2C26A64C0083244A /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		DA13BCA62C26B0D60083244A /* MigratedMyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyPage.swift; sourceTree = "<group>"; };
+		DA13BCA82C26B0E00083244A /* MigratedMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyPageViewController.swift; sourceTree = "<group>"; };
+		DA13BCAB2C26B1290083244A /* MigratedMyReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyReview.swift; sourceTree = "<group>"; };
+		DA13BCAD2C26B13E0083244A /* MigratedMyReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyReviewViewController.swift; sourceTree = "<group>"; };
+		DA13BCAF2C26B1570083244A /* MigratedProvision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedProvision.swift; sourceTree = "<group>"; };
+		DA13BCB42C26B1840083244A /* MigratedProvisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedProvisionViewController.swift; sourceTree = "<group>"; };
+		DA13BCB82C26B1C10083244A /* MigratedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedRequest.swift; sourceTree = "<group>"; };
+		DA13BCBA2C26B1CB0083244A /* MigratedRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedRequestViewController.swift; sourceTree = "<group>"; };
+		DA13BCBC2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedDeleteAccountConfirmation.swift; sourceTree = "<group>"; };
+		DA13BCBE2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedDeleteAccountConfirmationViewController.swift; sourceTree = "<group>"; };
 		DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUINavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -701,7 +719,7 @@
 				7B7E7C682C257708004AFA89 /* Auth */,
 				7B7E7C672C2576FE004AFA89 /* Home */,
 				7B7E7C662C2576F8004AFA89 /* Review */,
-				7B7E7C652C2576F0004AFA89 /* MyPage */,
+				7B7E7C652C2576F0004AFA89 /* MyPageView */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -723,12 +741,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		7B7E7C652C2576F0004AFA89 /* MyPage */ = {
+		7B7E7C652C2576F0004AFA89 /* MyPageView */ = {
 			isa = PBXGroup;
 			children = (
-				DA13BC9A2C26A64C0083244A /* View.swift */,
+				DA13BCA62C26B0D60083244A /* MigratedMyPage.swift */,
+				DA13BCA82C26B0E00083244A /* MigratedMyPageViewController.swift */,
+				DA13BCAA2C26B0F60083244A /* SubViews */,
 			);
-			path = MyPage;
+			path = MyPageView;
 			sourceTree = "<group>";
 		};
 		7B7E7C662C2576F8004AFA89 /* Review */ = {
@@ -1023,6 +1043,53 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		DA13BCAA2C26B0F60083244A /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				DA13BCB12C26B1620083244A /* MyReview */,
+				DA13BCB32C26B1710083244A /* Provision */,
+				DA13BCB62C26B1890083244A /* Request */,
+				DA13BCB72C26B1950083244A /* DeletaAccountConfirmation */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		DA13BCB12C26B1620083244A /* MyReview */ = {
+			isa = PBXGroup;
+			children = (
+				DA13BCAB2C26B1290083244A /* MigratedMyReview.swift */,
+				DA13BCAD2C26B13E0083244A /* MigratedMyReviewViewController.swift */,
+			);
+			path = MyReview;
+			sourceTree = "<group>";
+		};
+		DA13BCB32C26B1710083244A /* Provision */ = {
+			isa = PBXGroup;
+			children = (
+				DA13BCAF2C26B1570083244A /* MigratedProvision.swift */,
+				DA13BCB42C26B1840083244A /* MigratedProvisionViewController.swift */,
+			);
+			path = Provision;
+			sourceTree = "<group>";
+		};
+		DA13BCB62C26B1890083244A /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DA13BCB82C26B1C10083244A /* MigratedRequest.swift */,
+				DA13BCBA2C26B1CB0083244A /* MigratedRequestViewController.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DA13BCB72C26B1950083244A /* DeletaAccountConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				DA13BCBC2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift */,
+				DA13BCBE2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift */,
+			);
+			path = DeletaAccountConfirmation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1168,6 +1235,7 @@
 				051836262B13461A00D4FB81 /* ReviewEmptyViewCell.swift in Sources */,
 				7B7E7C6E2C2577E6004AFA89 /* A.swift in Sources */,
 				7B7E7C722C2577F0004AFA89 /* C.swift in Sources */,
+				DA13BCA92C26B0E00083244A /* MigratedMyPageViewController.swift in Sources */,
 				7B51C5A32A63268A0016B418 /* RestaurantInfoModel.swift in Sources */,
 				058326612A4D9422004A295F /* ChoiceMenuViewController.swift in Sources */,
 				05760F352B98DF9600A6528D /* UploadImageResponse.swift in Sources */,
@@ -1178,6 +1246,7 @@
 				7B51C5A12A6322D60016B418 /* DataTypeProtocol.swift in Sources */,
 				057A0AC72A1B488B00F10B85 /* TotalReviewResponse.swift in Sources */,
 				057A0B212A22278800F10B85 /* RealmService.swift in Sources */,
+				DA13BCBD2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift in Sources */,
 				7B989CC62B1FB97E00F02448 /* AppStoreCheck.swift in Sources */,
 				05EC82FC2A0BD17F00851B55 /* NoticeModel.swift in Sources */,
 				058326642A4D9597004A295F /* ChoiceMenuTableViewCell.swift in Sources */,
@@ -1195,6 +1264,7 @@
 				051F7E702A7992CA00CE9F87 /* NickName.swift in Sources */,
 				7BBE03852C26715D00AD6C76 /* M_TextLiteral.swift in Sources */,
 				05760F372B98E72300A6528D /* BeforeSelectedImageDTO.swift in Sources */,
+				DA13BCAE2C26B13E0083244A /* MigratedMyReviewViewController.swift in Sources */,
 				7B9998BA2A7944FD0043C592 /* UserNicknameRequest.swift in Sources */,
 				7BBD4CAA2A6D3B7A00515F67 /* TimeData.swift in Sources */,
 				7B9998EF2A827B2E0043C592 /* HomeRestaurantView.swift in Sources */,
@@ -1202,6 +1272,7 @@
 				7BBD4CF52A765A3000515F67 /* ReviewMenuTypeInfo.swift in Sources */,
 				7B732BEA2B08FB3000474A35 /* Weekday.swift in Sources */,
 				058326662A4D97BC004A295F /* UICollectionViewCell+.swift in Sources */,
+				DA13BCA72C26B0D60083244A /* MigratedMyPage.swift in Sources */,
 				7B2BBFB2299A29AF00EE0F1F /* UIColor+.swift in Sources */,
 				052555BA2C0DFD3D00D38E34 /* UILabel+.swift in Sources */,
 				7B6E35542B981E95004F00EE /* FirebaseRemoteConfig.swift in Sources */,
@@ -1217,8 +1288,11 @@
 				7B9998F32A836E660043C592 /* RestaurantTableViewHeader.swift in Sources */,
 				7BBD4CCD2A72544E00515F67 /* MyReviewView.swift in Sources */,
 				7B2BBFB4299A29DC00EE0F1F /* UIViewController+.swift in Sources */,
+				DA13BCAC2C26B1290083244A /* MigratedMyReview.swift in Sources */,
 				7B2C9E9B29DF3B4A0007603D /* ImageLiteral.swift in Sources */,
+				DA13BCBB2C26B1CB0083244A /* MigratedRequestViewController.swift in Sources */,
 				0540F10E2B7A08790075C7B0 /* BaseResponse.swift in Sources */,
+				DA13BCB92C26B1C10083244A /* MigratedRequest.swift in Sources */,
 				7B9998B82A793FB50043C592 /* UserNicknameRouter.swift in Sources */,
 				7BF5CC0C2A497AD800E4EE11 /* LoginView.swift in Sources */,
 				05AAF8502B3BF65E0079CEAB /* RequestViewController.swift in Sources */,
@@ -1236,7 +1310,6 @@
 				7B9998ED2A827A6A0043C592 /* HomeRestaurantViewController.swift in Sources */,
 				051CFA602A8B5A040023B3C6 /* ReportViewController.swift in Sources */,
 				7BBD05F22ACD62010078E046 /* UIWindow+.swift in Sources */,
-				DA13BC9B2C26A64C0083244A /* View.swift in Sources */,
 				052555B82C0DEB7400D38E34 /* DeleteAccountConfirmationView.swift in Sources */,
 				7B7E7C702C2577ED004AFA89 /* B.swift in Sources */,
 				056956FD29CB7958002E8CF2 /* ReviewTableCell.swift in Sources */,
@@ -1267,11 +1340,14 @@
 				7B7E7C742C2577F3004AFA89 /* D.swift in Sources */,
 				DA5F4B702C192CA8009469C4 /* BaseUINavigationBar.swift in Sources */,
 				7BBD4CAE2A6E5CE600515F67 /* RestaurantInfoTimeTableView.swift in Sources */,
+				DA13BCBF2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift in Sources */,
 				7B2BBF96299A1AC400EE0F1F /* AppDelegate.swift in Sources */,
 				051836282B145E1200D4FB81 /* Adjusted+.swift in Sources */,
 				7B99990C2A86313E0043C592 /* MenuType.swift in Sources */,
+				DA13BCB52C26B1840083244A /* MigratedProvisionViewController.swift in Sources */,
 				7BFD09C12A21EE3E00B40054 /* HomeRouter.swift in Sources */,
 				7BFD09BF2A21E6E400B40054 /* FixedMenuTableResponse.swift in Sources */,
+				DA13BCB02C26B1570083244A /* MigratedProvision.swift in Sources */,
 				7B9899C32A154F9800D1A076 /* Config.swift in Sources */,
 				057A0B2D2A250C1E00F10B85 /* WriteReviewRouter.swift in Sources */,
 				7B906AF42A1B849D00E4B6A9 /* MyPageViewController.swift in Sources */,
