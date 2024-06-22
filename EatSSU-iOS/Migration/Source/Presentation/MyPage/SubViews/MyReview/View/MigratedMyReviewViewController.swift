@@ -22,7 +22,7 @@ final class MigratedMyReviewViewController: BaseViewController {
 
   // MARK: - UI Components
 
-  let myReviewView = MyReviewView()
+  let myReviewView = MigratedMyReviewView()
 
   private lazy var noMyReviewImageView: UIImageView = {
     let imageView = UIImageView()

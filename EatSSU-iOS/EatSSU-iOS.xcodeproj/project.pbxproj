@@ -22,8 +22,6 @@
 		051F7E6B2A78FD3700CE9F87 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051F7E6A2A78FD3700CE9F87 /* UIImageView+.swift */; };
 		051F7E6E2A78FD8500CE9F87 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 051F7E6D2A78FD8500CE9F87 /* Kingfisher */; };
 		051F7E702A7992CA00CE9F87 /* NickName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051F7E6F2A7992CA00CE9F87 /* NickName.swift */; };
-		052555B62C0CC66100D38E34 /* DeleteAccountConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052555B52C0CC66100D38E34 /* DeleteAccountConfirmationViewController.swift */; };
-		052555B82C0DEB7400D38E34 /* DeleteAccountConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052555B72C0DEB7300D38E34 /* DeleteAccountConfirmationView.swift */; };
 		052555BA2C0DFD3D00D38E34 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052555B92C0DFD3D00D38E34 /* UILabel+.swift */; };
 		0540F10E2B7A08790075C7B0 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0540F10D2B7A08790075C7B0 /* BaseResponse.swift */; };
 		0553A8F12BA5D8EB00159B5D /* InquiryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0553A8F02BA5D8EB00159B5D /* InquiryRequest.swift */; };
@@ -62,13 +60,9 @@
 		0588407D2A80E2A90007AA98 /* MyReviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0588407C2A80E2A90007AA98 /* MyReviewResponse.swift */; };
 		0588407F2A80E3ED0007AA98 /* MyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0588407E2A80E3EC0007AA98 /* MyRouter.swift */; };
 		05A4C88429DFE42A004B9A81 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4C88329DFE42A004B9A81 /* UIStackView+.swift */; };
-		05AAF8502B3BF65E0079CEAB /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAF84F2B3BF65E0079CEAB /* RequestViewController.swift */; };
-		05AAF8522B3BF66F0079CEAB /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAF8512B3BF66F0079CEAB /* RequestView.swift */; };
 		05B0AB022A84DE7C00713C09 /* AppleLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B0AB012A84DE7C00713C09 /* AppleLoginRequest.swift */; };
 		05EC82FC2A0BD17F00851B55 /* NoticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EC82FB2A0BD17F00851B55 /* NoticeModel.swift */; };
 		7B08C3A12AFB9D570011F179 /* NIcknameTextFieldResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B08C3A02AFB9D570011F179 /* NIcknameTextFieldResultType.swift */; };
-		7B203D392B0A1A9D00059512 /* ProvisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B203D382B0A1A9D00059512 /* ProvisionViewController.swift */; };
-		7B203D3B2B0A1AE700059512 /* ProvisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B203D3A2B0A1AE700059512 /* ProvisionView.swift */; };
 		7B22DD2C2C2674D5005D0674 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B22DD2B2C2674D5005D0674 /* GoogleService-Info.plist */; };
 		7B2BBF96299A1AC400EE0F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BBF95299A1AC400EE0F1F /* AppDelegate.swift */; };
 		7B2BBF98299A1AC400EE0F1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BBF97299A1AC400EE0F1F /* SceneDelegate.swift */; };
@@ -108,7 +102,6 @@
 		7B7E7C7A2C257810004AFA89 /* H.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E7C792C257810004AFA89 /* H.swift */; };
 		7B7E7C7C2C257813004AFA89 /* G.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E7C7B2C257813004AFA89 /* G.swift */; };
 		7B7E7C802C25781C004AFA89 /* J.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E7C7F2C25781C004AFA89 /* J.swift */; };
-		7B906AF42A1B849D00E4B6A9 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B906AF32A1B849D00E4B6A9 /* MyPageViewController.swift */; };
 		7B9363FD2A9E35CC00D93518 /* RestaurantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9363FC2A9E35CC00D93518 /* RestaurantInfoViewController.swift */; };
 		7B98992E29E04F1300D1A076 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98992D29E04F1300D1A076 /* ReviewViewController.swift */; };
 		7B9899C32A154F9800D1A076 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9899C22A154F9800D1A076 /* Config.swift */; };
@@ -136,11 +129,6 @@
 		7BBD4CAC2A6D3E4600515F67 /* TimeDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD4CAB2A6D3E4600515F67 /* TimeDataTableViewCell.swift */; };
 		7BBD4CAE2A6E5CE600515F67 /* RestaurantInfoTimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD4CAD2A6E5CE600515F67 /* RestaurantInfoTimeTableView.swift */; };
 		7BBD4CB02A6E722A00515F67 /* RestaurantLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD4CAF2A6E722A00515F67 /* RestaurantLocation.swift */; };
-		7BBD4CBB2A6FED4800515F67 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD4CBA2A6FED4800515F67 /* MyPageView.swift */; };
-		7BBD4CBE2A6FF89000515F67 /* MyPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD4CBD2A6FF89000515F67 /* MyPageModel.swift */; };
-		7BBD4CC12A6FFE0400515F67 /* MyPageServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD4CC02A6FFE0400515F67 /* MyPageServiceCell.swift */; };
-		7BBD4CCB2A72541500515F67 /* MyReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD4CCA2A72541500515F67 /* MyReviewViewController.swift */; };
-		7BBD4CCD2A72544E00515F67 /* MyReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD4CCC2A72544E00515F67 /* MyReviewView.swift */; };
 		7BBD4CF52A765A3000515F67 /* ReviewMenuTypeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD4CF42A765A3000515F67 /* ReviewMenuTypeInfo.swift */; };
 		7BBE037E2C266F0300AD6C76 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE037D2C266F0300AD6C76 /* UIFont+.swift */; };
 		7BBE03832C26704300AD6C76 /* M_ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE03822C26704300AD6C76 /* M_ImageLiteral.swift */; };
@@ -157,20 +145,32 @@
 		7BF5CC3C2A53DD0600E4EE11 /* PostUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF5CC3B2A53DD0600E4EE11 /* PostUIButton.swift */; };
 		7BFD09BF2A21E6E400B40054 /* FixedMenuTableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD09BE2A21E6E400B40054 /* FixedMenuTableResponse.swift */; };
 		7BFD09C12A21EE3E00B40054 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD09C02A21EE3E00B40054 /* HomeRouter.swift */; };
-		DA13BCA72C26B0D60083244A /* MigratedMyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCA62C26B0D60083244A /* MigratedMyPage.swift */; };
+		DA13BCA72C26B0D60083244A /* MigratedMyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCA62C26B0D60083244A /* MigratedMyPageView.swift */; };
 		DA13BCA92C26B0E00083244A /* MigratedMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCA82C26B0E00083244A /* MigratedMyPageViewController.swift */; };
-		DA13BCAC2C26B1290083244A /* MigratedMyReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCAB2C26B1290083244A /* MigratedMyReview.swift */; };
+		DA13BCAC2C26B1290083244A /* MigratedMyReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCAB2C26B1290083244A /* MigratedMyReviewView.swift */; };
 		DA13BCAE2C26B13E0083244A /* MigratedMyReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCAD2C26B13E0083244A /* MigratedMyReviewViewController.swift */; };
-		DA13BCB02C26B1570083244A /* MigratedProvision.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCAF2C26B1570083244A /* MigratedProvision.swift */; };
+		DA13BCB02C26B1570083244A /* MigratedProvisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCAF2C26B1570083244A /* MigratedProvisionView.swift */; };
 		DA13BCB52C26B1840083244A /* MigratedProvisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCB42C26B1840083244A /* MigratedProvisionViewController.swift */; };
-		DA13BCB92C26B1C10083244A /* MigratedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCB82C26B1C10083244A /* MigratedRequest.swift */; };
+		DA13BCB92C26B1C10083244A /* MigratedRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCB82C26B1C10083244A /* MigratedRequestView.swift */; };
 		DA13BCBB2C26B1CB0083244A /* MigratedRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCBA2C26B1CB0083244A /* MigratedRequestViewController.swift */; };
-		DA13BCBD2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCBC2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift */; };
+		DA13BCBD2C26B1F80083244A /* MigratedDeleteAccountConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCBC2C26B1F80083244A /* MigratedDeleteAccountConfirmationView.swift */; };
 		DA13BCBF2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13BCBE2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift */; };
 		DA5F4B702C192CA8009469C4 /* BaseUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */; };
 		DA8137E02C26B895000612EC /* MigratedMyPageServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137DF2C26B895000612EC /* MigratedMyPageServiceCell.swift */; };
 		DA8137EF2C26BB25000612EC /* MigratedMyPageLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137EE2C26BB25000612EC /* MigratedMyPageLocalData.swift */; };
 		DA8137F12C26BB9D000612EC /* MigratedMyPageRightItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137F02C26BB9D000612EC /* MigratedMyPageRightItemData.swift */; };
+		DA8138032C26C4E1000612EC /* MyPageServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137F22C26C4E1000612EC /* MyPageServiceCell.swift */; };
+		DA8138042C26C4E1000612EC /* MyPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137F42C26C4E1000612EC /* MyPageModel.swift */; };
+		DA8138052C26C4E1000612EC /* DeleteAccountConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137F62C26C4E1000612EC /* DeleteAccountConfirmationView.swift */; };
+		DA8138062C26C4E1000612EC /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137F72C26C4E1000612EC /* MyPageView.swift */; };
+		DA8138072C26C4E1000612EC /* MyReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137F82C26C4E1000612EC /* MyReviewView.swift */; };
+		DA8138082C26C4E1000612EC /* ProvisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137F92C26C4E1000612EC /* ProvisionView.swift */; };
+		DA8138092C26C4E1000612EC /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137FA2C26C4E1000612EC /* RequestView.swift */; };
+		DA81380A2C26C4E1000612EC /* DeleteAccountConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137FC2C26C4E1000612EC /* DeleteAccountConfirmationViewController.swift */; };
+		DA81380B2C26C4E1000612EC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137FD2C26C4E1000612EC /* MyPageViewController.swift */; };
+		DA81380C2C26C4E1000612EC /* MyReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137FE2C26C4E1000612EC /* MyReviewViewController.swift */; };
+		DA81380D2C26C4E1000612EC /* ProvisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137FF2C26C4E1000612EC /* ProvisionViewController.swift */; };
+		DA81380E2C26C4E1000612EC /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8138002C26C4E1000612EC /* RequestViewController.swift */; };
 		DA83B3E82C18587200F41DB8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA83B3E72C18587200F41DB8 /* RealmSwift */; };
 		DAACFF042C244BDC00763006 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF032C244BDC00763006 /* RxCocoa */; };
 		DAACFF062C244BDC00763006 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF052C244BDC00763006 /* RxSwift */; };
@@ -190,8 +190,6 @@
 		051F7E682A78F48000CE9F87 /* ReviewListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListResponse.swift; sourceTree = "<group>"; };
 		051F7E6A2A78FD3700CE9F87 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		051F7E6F2A7992CA00CE9F87 /* NickName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickName.swift; sourceTree = "<group>"; };
-		052555B52C0CC66100D38E34 /* DeleteAccountConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountConfirmationViewController.swift; sourceTree = "<group>"; };
-		052555B72C0DEB7300D38E34 /* DeleteAccountConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountConfirmationView.swift; sourceTree = "<group>"; };
 		052555B92C0DFD3D00D38E34 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		0540F10D2B7A08790075C7B0 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		0553A8F02BA5D8EB00159B5D /* InquiryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryRequest.swift; sourceTree = "<group>"; };
@@ -228,14 +226,10 @@
 		0588407C2A80E2A90007AA98 /* MyReviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReviewResponse.swift; sourceTree = "<group>"; };
 		0588407E2A80E3EC0007AA98 /* MyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRouter.swift; sourceTree = "<group>"; };
 		05A4C88329DFE42A004B9A81 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
-		05AAF84F2B3BF65E0079CEAB /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
-		05AAF8512B3BF66F0079CEAB /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
 		05B0AB012A84DE7C00713C09 /* AppleLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginRequest.swift; sourceTree = "<group>"; };
 		05EC82FB2A0BD17F00851B55 /* NoticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeModel.swift; sourceTree = "<group>"; };
 		05EC83012A0BE5B700851B55 /* EatSSU-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "EatSSU-iOS.entitlements"; sourceTree = "<group>"; };
 		7B08C3A02AFB9D570011F179 /* NIcknameTextFieldResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIcknameTextFieldResultType.swift; sourceTree = "<group>"; };
-		7B203D382B0A1A9D00059512 /* ProvisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisionViewController.swift; sourceTree = "<group>"; };
-		7B203D3A2B0A1AE700059512 /* ProvisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisionView.swift; sourceTree = "<group>"; };
 		7B22DD2B2C2674D5005D0674 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B2BBF92299A1AC400EE0F1F /* EAT-SSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EAT-SSU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2BBF95299A1AC400EE0F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -269,7 +263,6 @@
 		7B7E7C792C257810004AFA89 /* H.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H.swift; sourceTree = "<group>"; };
 		7B7E7C7B2C257813004AFA89 /* G.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = G.swift; sourceTree = "<group>"; };
 		7B7E7C7F2C25781C004AFA89 /* J.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J.swift; sourceTree = "<group>"; };
-		7B906AF32A1B849D00E4B6A9 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		7B9363FC2A9E35CC00D93518 /* RestaurantInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoViewController.swift; sourceTree = "<group>"; };
 		7B98992D29E04F1300D1A076 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		7B9899C22A154F9800D1A076 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -297,11 +290,6 @@
 		7BBD4CAB2A6D3E4600515F67 /* TimeDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDataTableViewCell.swift; sourceTree = "<group>"; };
 		7BBD4CAD2A6E5CE600515F67 /* RestaurantInfoTimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoTimeTableView.swift; sourceTree = "<group>"; };
 		7BBD4CAF2A6E722A00515F67 /* RestaurantLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLocation.swift; sourceTree = "<group>"; };
-		7BBD4CBA2A6FED4800515F67 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
-		7BBD4CBD2A6FF89000515F67 /* MyPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageModel.swift; sourceTree = "<group>"; };
-		7BBD4CC02A6FFE0400515F67 /* MyPageServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageServiceCell.swift; sourceTree = "<group>"; };
-		7BBD4CCA2A72541500515F67 /* MyReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReviewViewController.swift; sourceTree = "<group>"; };
-		7BBD4CCC2A72544E00515F67 /* MyReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReviewView.swift; sourceTree = "<group>"; };
 		7BBD4CF42A765A3000515F67 /* ReviewMenuTypeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewMenuTypeInfo.swift; sourceTree = "<group>"; };
 		7BBE037D2C266F0300AD6C76 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		7BBE03822C26704300AD6C76 /* M_ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M_ImageLiteral.swift; sourceTree = "<group>"; };
@@ -317,20 +305,32 @@
 		7BF5CC3B2A53DD0600E4EE11 /* PostUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUIButton.swift; sourceTree = "<group>"; };
 		7BFD09BE2A21E6E400B40054 /* FixedMenuTableResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedMenuTableResponse.swift; sourceTree = "<group>"; };
 		7BFD09C02A21EE3E00B40054 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		DA13BCA62C26B0D60083244A /* MigratedMyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyPage.swift; sourceTree = "<group>"; };
+		DA13BCA62C26B0D60083244A /* MigratedMyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyPageView.swift; sourceTree = "<group>"; };
 		DA13BCA82C26B0E00083244A /* MigratedMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyPageViewController.swift; sourceTree = "<group>"; };
-		DA13BCAB2C26B1290083244A /* MigratedMyReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyReview.swift; sourceTree = "<group>"; };
+		DA13BCAB2C26B1290083244A /* MigratedMyReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyReviewView.swift; sourceTree = "<group>"; };
 		DA13BCAD2C26B13E0083244A /* MigratedMyReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyReviewViewController.swift; sourceTree = "<group>"; };
-		DA13BCAF2C26B1570083244A /* MigratedProvision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedProvision.swift; sourceTree = "<group>"; };
+		DA13BCAF2C26B1570083244A /* MigratedProvisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedProvisionView.swift; sourceTree = "<group>"; };
 		DA13BCB42C26B1840083244A /* MigratedProvisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedProvisionViewController.swift; sourceTree = "<group>"; };
-		DA13BCB82C26B1C10083244A /* MigratedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedRequest.swift; sourceTree = "<group>"; };
+		DA13BCB82C26B1C10083244A /* MigratedRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedRequestView.swift; sourceTree = "<group>"; };
 		DA13BCBA2C26B1CB0083244A /* MigratedRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedRequestViewController.swift; sourceTree = "<group>"; };
-		DA13BCBC2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedDeleteAccountConfirmation.swift; sourceTree = "<group>"; };
+		DA13BCBC2C26B1F80083244A /* MigratedDeleteAccountConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedDeleteAccountConfirmationView.swift; sourceTree = "<group>"; };
 		DA13BCBE2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedDeleteAccountConfirmationViewController.swift; sourceTree = "<group>"; };
 		DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUINavigationBar.swift; sourceTree = "<group>"; };
 		DA8137DF2C26B895000612EC /* MigratedMyPageServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyPageServiceCell.swift; sourceTree = "<group>"; };
 		DA8137EE2C26BB25000612EC /* MigratedMyPageLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyPageLocalData.swift; sourceTree = "<group>"; };
 		DA8137F02C26BB9D000612EC /* MigratedMyPageRightItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyPageRightItemData.swift; sourceTree = "<group>"; };
+		DA8137F22C26C4E1000612EC /* MyPageServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageServiceCell.swift; sourceTree = "<group>"; };
+		DA8137F42C26C4E1000612EC /* MyPageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageModel.swift; sourceTree = "<group>"; };
+		DA8137F62C26C4E1000612EC /* DeleteAccountConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAccountConfirmationView.swift; sourceTree = "<group>"; };
+		DA8137F72C26C4E1000612EC /* MyPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		DA8137F82C26C4E1000612EC /* MyReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReviewView.swift; sourceTree = "<group>"; };
+		DA8137F92C26C4E1000612EC /* ProvisionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisionView.swift; sourceTree = "<group>"; };
+		DA8137FA2C26C4E1000612EC /* RequestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
+		DA8137FC2C26C4E1000612EC /* DeleteAccountConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAccountConfirmationViewController.swift; sourceTree = "<group>"; };
+		DA8137FD2C26C4E1000612EC /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		DA8137FE2C26C4E1000612EC /* MyReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReviewViewController.swift; sourceTree = "<group>"; };
+		DA8137FF2C26C4E1000612EC /* ProvisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisionViewController.swift; sourceTree = "<group>"; };
+		DA8138002C26C4E1000612EC /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,7 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				7B9998E42A8276790043C592 /* Home */,
-				7B906AF02A1B847700E4B6A9 /* MyPage */,
+				DA8138022C26C4E1000612EC /* MyPage */,
 				7B2C9E6229DAC6B10007603D /* Auth */,
 				0569565D29B262F9002E8CF2 /* Review */,
 			);
@@ -813,30 +813,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		7B906AF02A1B847700E4B6A9 /* MyPage */ = {
-			isa = PBXGroup;
-			children = (
-				7BBD4CBF2A6FFDF400515F67 /* Cell */,
-				7BBD4CBC2A6FF83E00515F67 /* Model */,
-				7BBD4CB92A6FED3D00515F67 /* View */,
-				7B906AF12A1B849100E4B6A9 /* ViewController */,
-			);
-			name = MyPage;
-			path = ../MyPage;
-			sourceTree = "<group>";
-		};
-		7B906AF12A1B849100E4B6A9 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7B906AF32A1B849D00E4B6A9 /* MyPageViewController.swift */,
-				7BBD4CCA2A72541500515F67 /* MyReviewViewController.swift */,
-				7B203D382B0A1A9D00059512 /* ProvisionViewController.swift */,
-				05AAF84F2B3BF65E0079CEAB /* RequestViewController.swift */,
-				052555B52C0CC66100D38E34 /* DeleteAccountConfirmationViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		7B9899BC2A154EF400D1A076 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -953,34 +929,6 @@
 				7B99990B2A86313E0043C592 /* MenuType.swift */,
 			);
 			path = Protocol;
-			sourceTree = "<group>";
-		};
-		7BBD4CB92A6FED3D00515F67 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7BBD4CBA2A6FED4800515F67 /* MyPageView.swift */,
-				7BBD4CCC2A72544E00515F67 /* MyReviewView.swift */,
-				7B203D3A2B0A1AE700059512 /* ProvisionView.swift */,
-				05AAF8512B3BF66F0079CEAB /* RequestView.swift */,
-				052555B72C0DEB7300D38E34 /* DeleteAccountConfirmationView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7BBD4CBC2A6FF83E00515F67 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7BBD4CBD2A6FF89000515F67 /* MyPageModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7BBD4CBF2A6FFDF400515F67 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				7BBD4CC02A6FFE0400515F67 /* MyPageServiceCell.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		7BBE037B2C266EEB00AD6C76 /* Resource */ = {
@@ -1101,7 +1049,7 @@
 			children = (
 				DA8137DF2C26B895000612EC /* MigratedMyPageServiceCell.swift */,
 				DA8137ED2C26BB0D000612EC /* MyPageModel */,
-				DA13BCA62C26B0D60083244A /* MigratedMyPage.swift */,
+				DA13BCA62C26B0D60083244A /* MigratedMyPageView.swift */,
 				DA13BCA82C26B0E00083244A /* MigratedMyPageViewController.swift */,
 			);
 			path = View;
@@ -1110,7 +1058,7 @@
 		DA8137E22C26BA12000612EC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA13BCAB2C26B1290083244A /* MigratedMyReview.swift */,
+				DA13BCAB2C26B1290083244A /* MigratedMyReviewView.swift */,
 				DA13BCAD2C26B13E0083244A /* MigratedMyReviewViewController.swift */,
 			);
 			path = View;
@@ -1140,7 +1088,7 @@
 		DA8137E72C26BA5C000612EC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA13BCAF2C26B1570083244A /* MigratedProvision.swift */,
+				DA13BCAF2C26B1570083244A /* MigratedProvisionView.swift */,
 				DA13BCB42C26B1840083244A /* MigratedProvisionViewController.swift */,
 			);
 			path = View;
@@ -1156,7 +1104,7 @@
 		DA8137EA2C26BA75000612EC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA13BCB82C26B1C10083244A /* MigratedRequest.swift */,
+				DA13BCB82C26B1C10083244A /* MigratedRequestView.swift */,
 				DA13BCBA2C26B1CB0083244A /* MigratedRequestViewController.swift */,
 			);
 			path = View;
@@ -1165,7 +1113,7 @@
 		DA8137EB2C26BA7F000612EC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA13BCBC2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift */,
+				DA13BCBC2C26B1F80083244A /* MigratedDeleteAccountConfirmationView.swift */,
 				DA13BCBE2C26B2060083244A /* MigratedDeleteAccountConfirmationViewController.swift */,
 			);
 			path = View;
@@ -1185,6 +1133,58 @@
 				DA8137F02C26BB9D000612EC /* MigratedMyPageRightItemData.swift */,
 			);
 			path = MyPageModel;
+			sourceTree = "<group>";
+		};
+		DA8137F32C26C4E1000612EC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DA8137F22C26C4E1000612EC /* MyPageServiceCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DA8137F52C26C4E1000612EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA8137F42C26C4E1000612EC /* MyPageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA8137FB2C26C4E1000612EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA8137F62C26C4E1000612EC /* DeleteAccountConfirmationView.swift */,
+				DA8137F72C26C4E1000612EC /* MyPageView.swift */,
+				DA8137F82C26C4E1000612EC /* MyReviewView.swift */,
+				DA8137F92C26C4E1000612EC /* ProvisionView.swift */,
+				DA8137FA2C26C4E1000612EC /* RequestView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA8138012C26C4E1000612EC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA8137FC2C26C4E1000612EC /* DeleteAccountConfirmationViewController.swift */,
+				DA8137FD2C26C4E1000612EC /* MyPageViewController.swift */,
+				DA8137FE2C26C4E1000612EC /* MyReviewViewController.swift */,
+				DA8137FF2C26C4E1000612EC /* ProvisionViewController.swift */,
+				DA8138002C26C4E1000612EC /* RequestViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA8138022C26C4E1000612EC /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				DA8137F32C26C4E1000612EC /* Cell */,
+				DA8137F52C26C4E1000612EC /* Model */,
+				DA8137FB2C26C4E1000612EC /* View */,
+				DA8138012C26C4E1000612EC /* ViewController */,
+			);
+			name = MyPage;
+			path = ../MyPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1328,12 +1328,15 @@
 				7B7E7C7A2C257810004AFA89 /* H.swift in Sources */,
 				7B08C3A12AFB9D570011F179 /* NIcknameTextFieldResultType.swift in Sources */,
 				7BF5CC3C2A53DD0600E4EE11 /* PostUIButton.swift in Sources */,
+				DA8138062C26C4E1000612EC /* MyPageView.swift in Sources */,
 				DA8137F12C26BB9D000612EC /* MigratedMyPageRightItemData.swift in Sources */,
 				7B9998F12A827B590043C592 /* HomeCalendarView.swift in Sources */,
 				7BBE03832C26704300AD6C76 /* M_ImageLiteral.swift in Sources */,
 				051836262B13461A00D4FB81 /* ReviewEmptyViewCell.swift in Sources */,
+				DA81380E2C26C4E1000612EC /* RequestViewController.swift in Sources */,
 				7B7E7C6E2C2577E6004AFA89 /* A.swift in Sources */,
 				7B7E7C722C2577F0004AFA89 /* C.swift in Sources */,
+				DA81380B2C26C4E1000612EC /* MyPageViewController.swift in Sources */,
 				DA13BCA92C26B0E00083244A /* MigratedMyPageViewController.swift in Sources */,
 				7B51C5A32A63268A0016B418 /* RestaurantInfoModel.swift in Sources */,
 				058326612A4D9422004A295F /* ChoiceMenuViewController.swift in Sources */,
@@ -1345,7 +1348,7 @@
 				7B51C5A12A6322D60016B418 /* DataTypeProtocol.swift in Sources */,
 				057A0AC72A1B488B00F10B85 /* TotalReviewResponse.swift in Sources */,
 				057A0B212A22278800F10B85 /* RealmService.swift in Sources */,
-				DA13BCBD2C26B1F80083244A /* MigratedDeleteAccountConfirmation.swift in Sources */,
+				DA13BCBD2C26B1F80083244A /* MigratedDeleteAccountConfirmationView.swift in Sources */,
 				7B989CC62B1FB97E00F02448 /* AppStoreCheck.swift in Sources */,
 				05EC82FC2A0BD17F00851B55 /* NoticeModel.swift in Sources */,
 				058326642A4D9597004A295F /* ChoiceMenuTableViewCell.swift in Sources */,
@@ -1354,11 +1357,8 @@
 				7B6E35522B979B45004F00EE /* NoticeMessage.swift in Sources */,
 				056956BB29C0D8BF002E8CF2 /* L_UIFont+.swift in Sources */,
 				7B9998F92A838FEC0043C592 /* RestaurantTableViewMenuCell.swift in Sources */,
-				7BBD4CBB2A6FED4800515F67 /* MyPageView.swift in Sources */,
-				7BBD4CBE2A6FF89000515F67 /* MyPageModel.swift in Sources */,
 				7B2C9E9729DEE7B20007603D /* UITextField+.swift in Sources */,
 				7BF5CC102A49F24F00E4EE11 /* UIButton+.swift in Sources */,
-				05AAF8522B3BF66F0079CEAB /* RequestView.swift in Sources */,
 				7B9998F72A838EF70043C592 /* BaseTableViewCell.swift in Sources */,
 				051F7E702A7992CA00CE9F87 /* NickName.swift in Sources */,
 				7BBE03852C26715D00AD6C76 /* M_TextLiteral.swift in Sources */,
@@ -1367,11 +1367,14 @@
 				7B9998BA2A7944FD0043C592 /* UserNicknameRequest.swift in Sources */,
 				7BBD4CAA2A6D3B7A00515F67 /* TimeData.swift in Sources */,
 				7B9998EF2A827B2E0043C592 /* HomeRestaurantView.swift in Sources */,
+				DA8138052C26C4E1000612EC /* DeleteAccountConfirmationView.swift in Sources */,
+				DA8138032C26C4E1000612EC /* MyPageServiceCell.swift in Sources */,
+				DA81380A2C26C4E1000612EC /* DeleteAccountConfirmationViewController.swift in Sources */,
 				7BBD4C972A67DAEF00515F67 /* ChangeMenuTableResponse.swift in Sources */,
 				7BBD4CF52A765A3000515F67 /* ReviewMenuTypeInfo.swift in Sources */,
 				7B732BEA2B08FB3000474A35 /* Weekday.swift in Sources */,
 				058326662A4D97BC004A295F /* UICollectionViewCell+.swift in Sources */,
-				DA13BCA72C26B0D60083244A /* MigratedMyPage.swift in Sources */,
+				DA13BCA72C26B0D60083244A /* MigratedMyPageView.swift in Sources */,
 				7B2BBFB2299A29AF00EE0F1F /* UIColor+.swift in Sources */,
 				052555BA2C0DFD3D00D38E34 /* UILabel+.swift in Sources */,
 				7B6E35542B981E95004F00EE /* FirebaseRemoteConfig.swift in Sources */,
@@ -1383,52 +1386,49 @@
 				7BBD4CA22A6C406C00515F67 /* RestaurantInfoView.swift in Sources */,
 				7B2C9E9129DAF6270007603D /* MainButton.swift in Sources */,
 				7BBE037E2C266F0300AD6C76 /* UIFont+.swift in Sources */,
+				DA81380D2C26C4E1000612EC /* ProvisionViewController.swift in Sources */,
 				057A0B232A22279B00F10B85 /* Token.swift in Sources */,
 				7B9998F32A836E660043C592 /* RestaurantTableViewHeader.swift in Sources */,
-				7BBD4CCD2A72544E00515F67 /* MyReviewView.swift in Sources */,
 				7B2BBFB4299A29DC00EE0F1F /* UIViewController+.swift in Sources */,
-				DA13BCAC2C26B1290083244A /* MigratedMyReview.swift in Sources */,
+				DA13BCAC2C26B1290083244A /* MigratedMyReviewView.swift in Sources */,
 				7B2C9E9B29DF3B4A0007603D /* ImageLiteral.swift in Sources */,
 				DA13BCBB2C26B1CB0083244A /* MigratedRequestViewController.swift in Sources */,
 				0540F10E2B7A08790075C7B0 /* BaseResponse.swift in Sources */,
-				DA13BCB92C26B1C10083244A /* MigratedRequest.swift in Sources */,
+				DA13BCB92C26B1C10083244A /* MigratedRequestView.swift in Sources */,
 				7B9998B82A793FB50043C592 /* UserNicknameRouter.swift in Sources */,
 				7BF5CC0C2A497AD800E4EE11 /* LoginView.swift in Sources */,
-				05AAF8502B3BF65E0079CEAB /* RequestViewController.swift in Sources */,
 				051836242B1334C600D4FB81 /* ReviewRateViewCell.swift in Sources */,
 				7B51C5952A62A0B10016B418 /* CALayer.swift in Sources */,
 				056956C929C0E51F002E8CF2 /* BaseUIView.swift in Sources */,
 				7B9999092A8627540043C592 /* MenuTypeInfo.swift in Sources */,
 				7B76EB9E2B01433F00D4F439 /* AuthInterceptor.swift in Sources */,
 				0569570C29CE1A71002E8CF2 /* WriteReviewViewController.swift in Sources */,
+				DA8138042C26C4E1000612EC /* MyPageModel.swift in Sources */,
 				057A0ACF2A1D3EEF00F10B85 /* WriteReviewRequest.swift in Sources */,
 				057A0AC92A1B498300F10B85 /* ReviewRouter.swift in Sources */,
 				057A0B292A222F7E00F10B85 /* SignInRequest.swift in Sources */,
-				7BBD4CCB2A72541500515F67 /* MyReviewViewController.swift in Sources */,
 				7B7E7C802C25781C004AFA89 /* J.swift in Sources */,
 				7B9998ED2A827A6A0043C592 /* HomeRestaurantViewController.swift in Sources */,
 				051CFA602A8B5A040023B3C6 /* ReportViewController.swift in Sources */,
 				7BBD05F22ACD62010078E046 /* UIWindow+.swift in Sources */,
-				052555B82C0DEB7400D38E34 /* DeleteAccountConfirmationView.swift in Sources */,
 				7B7E7C702C2577ED004AFA89 /* B.swift in Sources */,
 				056956FD29CB7958002E8CF2 /* ReviewTableCell.swift in Sources */,
 				DA8137E02C26B895000612EC /* MigratedMyPageServiceCell.swift in Sources */,
 				7B7E7C782C25780D004AFA89 /* I.swift in Sources */,
-				7B203D3B2B0A1AE700059512 /* ProvisionView.swift in Sources */,
 				056956FF29CB81E2002E8CF2 /* SetRateViewController.swift in Sources */,
 				7B9998EB2A8279FC0043C592 /* HomeTimeTabmanController.swift in Sources */,
+				DA81380C2C26C4E1000612EC /* MyReviewViewController.swift in Sources */,
 				7BBD4CB02A6E722A00515F67 /* RestaurantLocation.swift in Sources */,
 				0583266A2A4DC891004A295F /* RateNumberView.swift in Sources */,
-				7B203D392B0A1A9D00059512 /* ProvisionViewController.swift in Sources */,
 				0553A8F12BA5D8EB00159B5D /* InquiryRequest.swift in Sources */,
 				7BBD4CAC2A6D3E4600515F67 /* TimeDataTableViewCell.swift in Sources */,
 				051F7E692A78F48000CE9F87 /* ReviewListResponse.swift in Sources */,
 				051F7E632A70E4F700CE9F87 /* KakaoLoginRequest.swift in Sources */,
 				057C5B332A837BD5007EDE06 /* BaseButton.swift in Sources */,
-				7BBD4CC12A6FFE0400515F67 /* MyPageServiceCell.swift in Sources */,
 				7BE4E3CF2B00FAAD0009763A /* ReissueRouter.swift in Sources */,
 				0553A8F32BA74F6700159B5D /* FixedReviewRateResponse.swift in Sources */,
 				051F7E6B2A78FD3700CE9F87 /* UIImageView+.swift in Sources */,
+				DA8138082C26C4E1000612EC /* ProvisionView.swift in Sources */,
 				7B6E35562B984BA6004F00EE /* NoticeViewController.swift in Sources */,
 				7B51C5BD2A654FB40016B418 /* FixedMenuInfoModel.swift in Sources */,
 				7BF5CC382A53168000E4EE11 /* SetNickNameView.swift in Sources */,
@@ -1444,20 +1444,20 @@
 				7B2BBF96299A1AC400EE0F1F /* AppDelegate.swift in Sources */,
 				051836282B145E1200D4FB81 /* Adjusted+.swift in Sources */,
 				7B99990C2A86313E0043C592 /* MenuType.swift in Sources */,
+				DA8138092C26C4E1000612EC /* RequestView.swift in Sources */,
 				DA13BCB52C26B1840083244A /* MigratedProvisionViewController.swift in Sources */,
 				7BFD09C12A21EE3E00B40054 /* HomeRouter.swift in Sources */,
 				7BFD09BF2A21E6E400B40054 /* FixedMenuTableResponse.swift in Sources */,
-				DA13BCB02C26B1570083244A /* MigratedProvision.swift in Sources */,
+				DA13BCB02C26B1570083244A /* MigratedProvisionView.swift in Sources */,
 				7B9899C32A154F9800D1A076 /* Config.swift in Sources */,
 				057A0B2D2A250C1E00F10B85 /* WriteReviewRouter.swift in Sources */,
-				7B906AF42A1B849D00E4B6A9 /* MyPageViewController.swift in Sources */,
 				7B2BBF98299A1AC400EE0F1F /* SceneDelegate.swift in Sources */,
 				0559705B2A16646B00868C42 /* MenuReviewResponse.swift in Sources */,
 				7B732BE82B08E76000474A35 /* NetworkMonitor.swift in Sources */,
 				7BBD4CA82A6D2A6600515F67 /* RestaurantInfoResponse.swift in Sources */,
+				DA8138072C26C4E1000612EC /* MyReviewView.swift in Sources */,
 				051CFA632A8BEA120023B3C6 /* ReportRequest.swift in Sources */,
 				0569570A29CCBC41002E8CF2 /* RateView.swift in Sources */,
-				052555B62C0CC66100D38E34 /* DeleteAccountConfirmationViewController.swift in Sources */,
 				0559705D2A16670600868C42 /* MenuInfoResponse.swift in Sources */,
 				051F7E672A742FA500CE9F87 /* ReviewRateResponse.swift in Sources */,
 				7BF5CC3A2A531ED100E4EE11 /* SetNickNameViewController.swift in Sources */,

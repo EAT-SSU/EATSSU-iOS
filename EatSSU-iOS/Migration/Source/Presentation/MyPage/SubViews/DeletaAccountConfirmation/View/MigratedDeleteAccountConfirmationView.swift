@@ -127,7 +127,7 @@ final class MigratedDeleteAccountConfirmationView: BaseUIView {
     inputNickNameTextField.delegate = self
   }
 
-  func setValidationLabel(state: ValidationLabelState) {
+  func setValidationLabel(state: MigratedValidationLabelState) {
     switch state {
     case .corrected:
       nickNameStateGuideLabel.text = TextLiteral.MyPage.correctInput

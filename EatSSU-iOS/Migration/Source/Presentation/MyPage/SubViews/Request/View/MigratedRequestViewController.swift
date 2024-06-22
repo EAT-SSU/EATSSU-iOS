@@ -17,7 +17,7 @@ final class MigratedRequestViewController: BaseViewController {
 
   // MARK: - UI Component
 
-  private let requestView = RequestView()
+  private let requestView = MigratedRequestView()
 
   // MARK: - Life Cycles
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MigratedProvision: BaseUIView, UITextViewDelegate {
+final class MigratedProvisionView: BaseUIView, UITextViewDelegate {
 
   // MARK: - UI Components
 

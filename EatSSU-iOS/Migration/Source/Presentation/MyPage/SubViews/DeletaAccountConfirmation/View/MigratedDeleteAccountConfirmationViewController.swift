@@ -20,7 +20,7 @@ final class MigratedDeleteAccountConfirmationViewController: BaseViewController 
 
   // MARK: - UI Components
 
-  private lazy var deleteAccountView = DeleteAccountConfirmationView(nickName: nickName)
+  private lazy var deleteAccountView = MigratedDeleteAccountConfirmationView(nickName: nickName)
 
   // MARK: - Life Cycles
 

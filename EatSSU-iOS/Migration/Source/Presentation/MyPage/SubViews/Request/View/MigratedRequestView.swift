@@ -9,7 +9,7 @@ import SnapKit
 import Then
 import UIKit
 
-final class MigratedRequest: BaseUIView {
+final class MigratedRequestView: BaseUIView {
 
   // MARK: - UI Component
 

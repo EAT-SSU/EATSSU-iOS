@@ -20,7 +20,7 @@ final class MigratedMyPageViewController: BaseViewController {
 
   // MARK: - UI Components
 
-  let mypageView = MyPageView()
+  let mypageView = MigratedMyPageView()
 
   // MARK: - Life Cycles
 
@@ -104,8 +104,8 @@ extension MigratedMyPageViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard
       let cell = tableView.dequeueReusableCell(
-        withIdentifier: MyPageServiceCell.identifier, for: indexPath) as? MyPageServiceCell
-    else { return MyPageServiceCell() }
+        withIdentifier: MigratedMyPageServiceCell.identifier, for: indexPath) as? MigratedMyPageServiceCell
+    else { return MigratedMyPageServiceCell() }
 
     let titleLabel = mypageView.myPageServiceLabelList[indexPath.row].titleLabel
     cell.serviceLabel.text = titleLabel
@@ -137,23 +137,23 @@ extension MigratedMyPageViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
 
-    guard let action = TableRowAction(rawValue: indexPath.row) else { return }
+    guard let action = MigratedTableRowAction(rawValue: indexPath.row) else { return }
 
     switch action {
     case .showMyReview:
-      let myReviewViewController = MyReviewViewController()
+      let myReviewViewController = MigratedMyReviewViewController()
       navigationController?.pushViewController(myReviewViewController, animated: true)
     case .showRequest:
-      let requestViewController = RequestViewController()
+      let requestViewController = MigratedRequestViewController()
       navigationController?.pushViewController(requestViewController, animated: true)
     case .showTermsOfUse:
-      let provisionViewController = ProvisionViewController()
+      let provisionViewController = MigratedProvisionViewController()
       provisionViewController.navigationTitle = TextLiteral.MyPage.termsOfUse
       provisionViewController.provisionView.privisionTextView.text =
         TextLiteral.MyPage.termsOfUseText
       navigationController?.pushViewController(provisionViewController, animated: true)
     case .showPrivacyTerms:
-      let provisionViewController = ProvisionViewController()
+      let provisionViewController = MigratedProvisionViewController()
       provisionViewController.navigationTitle = TextLiteral.MyPage.privacyTermsOfUse
       provisionViewController.provisionView.privisionTextView.text =
         TextLiteral.MyPage.privacyTermsOfUseText
@@ -161,7 +161,7 @@ extension MigratedMyPageViewController: UITableViewDelegate {
     case .showAlert:
       self.showAlert()
     case .deleteAccount:
-      let deleteAccountViewController = DeleteAccountConfirmationViewController()
+      let deleteAccountViewController = MigratedDeleteAccountConfirmationViewController()
       deleteAccountViewController.getUsernickName(nickName: nickName)
       navigationController?.pushViewController(deleteAccountViewController, animated: true)
     }

@@ -9,7 +9,7 @@ import SnapKit
 import Then
 import UIKit
 
-final class MigratedMyReview: BaseUIView {
+final class MigratedMyReviewView: BaseUIView {
 
   // MARK: - UI Components
 

@@ -13,8 +13,8 @@ final class MigratedMyPageView: BaseUIView {
 
   // MARK: - Properties
 
-  let myPageServiceLabelList = MyPageLocalData.myPageServiceLabelList
-  let myPageRightItemListDate = MyPageRightItemData.myPageRightItemList
+  let myPageServiceLabelList = MigratedMyPageLocalData.myPageServiceLabelList
+  let myPageRightItemListDate = MigratedMyPageRightItemData.myPageRightItemList
   private var dataModel: MyInfoResponse? {
     didSet {
       if let nickname = dataModel?.nickname {
@@ -125,7 +125,7 @@ final class MigratedMyPageView: BaseUIView {
 
   func register() {
     myPageTableView.register(
-      MyPageServiceCell.self, forCellReuseIdentifier: MyPageServiceCell.identifier)
+      MigratedMyPageServiceCell.self, forCellReuseIdentifier: MigratedMyPageServiceCell.identifier)
   }
 
   func dataBind(model: MyInfoResponse) {

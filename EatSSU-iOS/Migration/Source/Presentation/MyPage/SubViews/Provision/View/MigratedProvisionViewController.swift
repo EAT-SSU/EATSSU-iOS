@@ -14,7 +14,7 @@ final class MigratedProvisionViewController: BaseViewController {
 
   // MARK: - UI Components
 
-  let provisionView = ProvisionView()
+  let provisionView = MigratedProvisionView()
 
   // MARK: - UI Configuration
 

@@ -25,6 +25,6 @@ struct MigratedMyPageRightItemData: AppData {
 
 extension MigratedMyPageRightItemData {
   static let myPageRightItemList = [
-    MyPageRightItemData(rightArrow: ">", appVersion: MyPageRightItemData.version ?? "")
+    MigratedMyPageRightItemData(rightArrow: ">", appVersion: MigratedMyPageRightItemData.version ?? "")
   ]
 }
