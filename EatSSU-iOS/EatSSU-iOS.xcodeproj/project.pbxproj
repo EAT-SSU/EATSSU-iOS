@@ -157,6 +157,7 @@
 		7BF5CC3C2A53DD0600E4EE11 /* PostUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF5CC3B2A53DD0600E4EE11 /* PostUIButton.swift */; };
 		7BFD09BF2A21E6E400B40054 /* FixedMenuTableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD09BE2A21E6E400B40054 /* FixedMenuTableResponse.swift */; };
 		7BFD09C12A21EE3E00B40054 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD09C02A21EE3E00B40054 /* HomeRouter.swift */; };
+		DA13BC992C269F100083244A /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DA13BC982C269F0F0083244A /* Release.xcconfig */; };
 		DA5F4B702C192CA8009469C4 /* BaseUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */; };
 		DA8138172C26CC3B000612EC /* MigratedLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8138162C26CC3B000612EC /* MigratedLoginView.swift */; };
 		DA8138192C26CC4D000612EC /* MigratedLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8138182C26CC4D000612EC /* MigratedLoginViewController.swift */; };
@@ -308,6 +309,7 @@
 		7BF5CC3B2A53DD0600E4EE11 /* PostUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUIButton.swift; sourceTree = "<group>"; };
 		7BFD09BE2A21E6E400B40054 /* FixedMenuTableResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedMenuTableResponse.swift; sourceTree = "<group>"; };
 		7BFD09C02A21EE3E00B40054 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		DA13BC982C269F0F0083244A /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUINavigationBar.swift; sourceTree = "<group>"; };
 		DA8138162C26CC3B000612EC /* MigratedLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedLoginView.swift; sourceTree = "<group>"; };
 		DA8138182C26CC4D000612EC /* MigratedLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedLoginViewController.swift; sourceTree = "<group>"; };
@@ -1027,6 +1029,7 @@
 			isa = PBXGroup;
 			children = (
 				7BBE03862C26724E00AD6C76 /* Debug.xcconfig */,
+				DA13BC982C269F0F0083244A /* Release.xcconfig */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -1169,6 +1172,7 @@
 			files = (
 				7B2BBFA2299A1AC500EE0F1F /* LaunchScreen.storyboard in Resources */,
 				7B2BBF9F299A1AC500EE0F1F /* Assets.xcassets in Resources */,
+				DA13BC992C269F100083244A /* Release.xcconfig in Resources */,
 				7B22DD2C2C2674D5005D0674 /* GoogleService-Info.plist in Resources */,
 				7BBE03872C26724E00AD6C76 /* Debug.xcconfig in Resources */,
 				7B4E682C2BB34D4300F3EE40 /* SplashEvent.png in Resources */,
