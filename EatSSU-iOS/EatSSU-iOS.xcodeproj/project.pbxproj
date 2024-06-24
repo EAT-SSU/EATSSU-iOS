@@ -158,6 +158,7 @@
 		7BFD09BF2A21E6E400B40054 /* FixedMenuTableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD09BE2A21E6E400B40054 /* FixedMenuTableResponse.swift */; };
 		7BFD09C12A21EE3E00B40054 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD09C02A21EE3E00B40054 /* HomeRouter.swift */; };
 		DA13BC992C269F100083244A /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DA13BC982C269F0F0083244A /* Release.xcconfig */; };
+		DA58AD8B2C28EBC3003F01DE /* MigratedLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58AD8A2C28EBC3003F01DE /* MigratedLoginViewModel.swift */; };
 		DA5F4B702C192CA8009469C4 /* BaseUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */; };
 		DA8138172C26CC3B000612EC /* MigratedLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8138162C26CC3B000612EC /* MigratedLoginView.swift */; };
 		DA8138192C26CC4D000612EC /* MigratedLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8138182C26CC4D000612EC /* MigratedLoginViewController.swift */; };
@@ -310,6 +311,7 @@
 		7BFD09BE2A21E6E400B40054 /* FixedMenuTableResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedMenuTableResponse.swift; sourceTree = "<group>"; };
 		7BFD09C02A21EE3E00B40054 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		DA13BC982C269F0F0083244A /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		DA58AD8A2C28EBC3003F01DE /* MigratedLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedLoginViewModel.swift; sourceTree = "<group>"; };
 		DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUINavigationBar.swift; sourceTree = "<group>"; };
 		DA8138162C26CC3B000612EC /* MigratedLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedLoginView.swift; sourceTree = "<group>"; };
 		DA8138182C26CC4D000612EC /* MigratedLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedLoginViewController.swift; sourceTree = "<group>"; };
@@ -1071,6 +1073,7 @@
 		DA8138132C26CBD5000612EC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DA58AD8A2C28EBC3003F01DE /* MigratedLoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1313,6 +1316,7 @@
 				051F7E6B2A78FD3700CE9F87 /* UIImageView+.swift in Sources */,
 				7B6E35562B984BA6004F00EE /* NoticeViewController.swift in Sources */,
 				7B51C5BD2A654FB40016B418 /* FixedMenuInfoModel.swift in Sources */,
+				DA58AD8B2C28EBC3003F01DE /* MigratedLoginViewModel.swift in Sources */,
 				7BF5CC382A53168000E4EE11 /* SetNickNameView.swift in Sources */,
 				057A0B272A222D4A00F10B85 /* AuthRouter.swift in Sources */,
 				7B7E7C7C2C257813004AFA89 /* G.swift in Sources */,

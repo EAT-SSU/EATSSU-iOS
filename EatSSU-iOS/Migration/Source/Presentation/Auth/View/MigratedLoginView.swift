@@ -10,7 +10,6 @@ import Then
 import UIKit
 
 final class MigratedLoginView: BaseUIView {
-
   // MARK: - UI Components
 
   private let logoImage = UIImageView().then { $0.image = ImageLiteral.Auth.signInImage }
@@ -26,6 +25,8 @@ final class MigratedLoginView: BaseUIView {
   let lookingWithNoSignInButton = UIButton().then {
     $0.setImage(ImageLiteral.Auth.lookingButton, for: .normal)
   }
+
+  // MARK: - Configuring UI
 
   override func configureUI() {
     self.addSubviews(

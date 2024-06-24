@@ -6,6 +6,7 @@
 //
 
 import AuthenticationServices
+import Combine
 import Firebase
 import KakaoSDKUser
 import Moya
@@ -17,25 +18,22 @@ import UIKit
 final class MigratedLoginViewController: BaseViewController {
   // MARK: - Properties
 
-  var loginAfterlooking = true
+  private var viewModel = MigratedLoginViewModel()
+  private var cancellables = Set<AnyCancellable>()
 
   // MARK: - UI Components
 
   private let loginView = MigratedLoginView()
-  private let authProvider = MoyaProvider<AuthRouter>(plugins: [MoyaLoggingPlugin()])
-  private let myProvider = MoyaProvider<MyRouter>(plugins: [MoyaLoggingPlugin()])
 
   // MARK: - Life Cycles
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-
-    self.checkUser()
   }
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    self.bindViewModel()
     Analytics.logEvent("LoginViewControllerLoad", parameters: nil)
   }
 
@@ -62,32 +60,47 @@ final class MigratedLoginViewController: BaseViewController {
       self, action: #selector(lookingWithNoSignInButtonDidTapped), for: .touchUpInside)
   }
 
-  // MARK: - Some Methods
-
-  private func getUserInfo() {
-    UserApi.shared.me { user, error in
-      if let error = error {
-        debugPrint("🎃", error.localizedDescription)
-      } else {
-        guard let email = user?.kakaoAccount?.email else { return }
-        guard let id = user?.id else { return }
-        self.postKakaoLoginRequest(email: email, id: String(id))
+  private func bindViewModel() {
+    viewModel.$tokenIsExist
+      .receive(on: RunLoop.main)
+      .sink { tokenIsExist in      
+        if tokenIsExist {
+          self.changeRootVCIntoHomeVC()
+        }
       }
-    }
+      .store(in: &cancellables)
+    
+    viewModel.$nickName
+      .receive(on: RunLoop.main)
+      .sink { nickName in
+        switch nickName {
+        case nil:
+          self.pushToNicknameVC()
+        default:
+          self.changeRootVCIntoHomeVC()
+        }
+      }
+      .store(in: &cancellables)
+
+    viewModel.$error
+      .receive(on: RunLoop.main)
+      .sink { error in
+        if let error = error {
+          self.presentBottomAlert(error.localizedDescription)
+        } else {
+          self.presentBottomAlert("기본 에러 메시지")
+        }
+      }
+      .store(in: &cancellables)
   }
 
-  private func addTokenInRealm(accessToken: String, refreshToken: String) {
-    RealmService.shared.addToken(accessToken: accessToken, refreshToken: refreshToken)
-    debugPrint("⭐️⭐️토큰 저장 성공~⭐️⭐️")
-    debugPrint(RealmService.shared.getToken())
-    debugPrint(RealmService.shared.getRefreshToken())
-  }
+  // MARK: - Controller Methods
 
-  private func pushToHomeVC() {
+  private func changeRootVCIntoHomeVC() {
     let homeVC = HomeViewController()
 
     if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-      let keyWindow = windowScene.windows.first(where: { $0.isKeyWindow })
+       let keyWindow = windowScene.windows.first(where: { $0.isKeyWindow })
     {
       keyWindow.replaceRootViewController(
         UINavigationController(rootViewController: homeVC), animated: true, completion: nil)
@@ -99,197 +112,20 @@ final class MigratedLoginViewController: BaseViewController {
     navigationController?.pushViewController(setNicknameViewController, animated: true)
   }
 
-  private func checkRealmToken() -> Bool {
-    if RealmService.shared.getToken() == "" {
-      return false
-    } else {
-      return true
-    }
-  }
-
-  private func checkUser() {
-    /// 자동 로그인 풀고 싶을 때 한번 실행시켜주기
-    //        self.realm.resetDB()
-
-    /// 자동 로그인
-    if self.checkRealmToken() {
-      debugPrint(RealmService.shared.getToken())
-      self.pushToHomeVC()
-    }
-  }
-
-  /// 요청으로 얻을 수 있는 값들: 이름, 이메일로 설정
-  private func appleLoginRequest() {
-    let appleIDProvider = ASAuthorizationAppleIDProvider()
-    let request = appleIDProvider.createRequest()
-    request.requestedScopes = [.fullName, .email]
-
-    let authorizationController = ASAuthorizationController(authorizationRequests: [request])
-    authorizationController.delegate = self
-    authorizationController.presentationContextProvider = self
-    authorizationController.performRequests()
-  }
-
-  private func checkUserNickname(info: MyInfoResponse) {
-    switch info.nickname {
-    case nil:
-      self.pushToNicknameVC()
-    default:
-      self.pushToHomeVC()
-    }
-  }
-
   // MARK: - Button Action Methods
 
   @objc
   func kakaoLoginButtonDidTapped() {
-    // 카카오톡 앱이 설치되어 있는지 확인
-    if UserApi.isKakaoTalkLoginAvailable() {
-      // 카카오톡 앱을 통한 로그인 시도
-      UserApi.shared.loginWithKakaoTalk { oauthToken, error in
-        if let error = error {
-          debugPrint(error)
-        } else {
-          debugPrint("loginWithKakaoTalk() success.")
-          self.getUserInfo()
-          _ = oauthToken
-        }
-      }
-    } else {
-      // 카카오 계정을 통한 웹 로그인 시도
-      UserApi.shared.loginWithKakaoAccount { oauthToken, error in
-        if let error = error {
-          debugPrint(error)
-        } else {
-          self.getUserInfo()
-          _ = oauthToken
-        }
-      }
-    }
+    viewModel.loginWithKakaoSystem()
   }
 
   @objc
   private func appleLoginButtonDidTapped() {
-    appleLoginRequest()
+    viewModel.loginWithAppleSystem()
   }
 
   @objc
-  func lookingWithNoSignInButtonDidTapped() {
-    pushToHomeVC()
-  }
-}
-
-// MARK: - Network
-
-extension MigratedLoginViewController {
-  func postKakaoLoginRequest(email: String, id: String) {
-    self.authProvider.request(
-      .kakaoLogin(
-        param: KakaoLoginRequest(
-          email: email,
-          providerId: id
-        )
-      )
-    ) { response in
-      switch response {
-      case .success(let moyaResponse):
-        do {
-          debugPrint(moyaResponse.statusCode)
-          let responseData = try moyaResponse.map(BaseResponse<SignResponse>.self)
-          self.addTokenInRealm(
-            accessToken: responseData.result.accessToken,
-            refreshToken: responseData.result.refreshToken)
-          self.getMyInfo()
-        } catch (let err) {
-          self.presentBottomAlert(err.localizedDescription)
-          debugPrint(err.localizedDescription)
-        }
-      case .failure(let err):
-        self.presentBottomAlert(err.localizedDescription)
-        debugPrint(err.localizedDescription)
-      }
-    }
-  }
-
-  private func getMyInfo() {
-    self.myProvider.request(.myInfo) { response in
-      switch response {
-      case .success(let moyaResponse):
-        do {
-          let responseData = try moyaResponse.map(BaseResponse<MyInfoResponse>.self)
-          self.checkUserNickname(info: responseData.result)
-        } catch (let err) {
-          debugPrint(err.localizedDescription)
-        }
-      case .failure(let err):
-        debugPrint(err.localizedDescription)
-      }
-    }
-  }
-
-  private func postAppleLoginRequest(token: String) {
-    self.authProvider.request(.appleLogin(param: AppleLoginRequest(identityToken: token))) {
-      response in
-      switch response {
-      case .success(let moyaResponse):
-        do {
-          debugPrint(moyaResponse.statusCode)
-          let responseData = try moyaResponse.map(BaseResponse<SignResponse>.self)
-          self.addTokenInRealm(
-            accessToken: responseData.result.accessToken,
-            refreshToken: responseData.result.refreshToken
-          )
-          self.getMyInfo()
-        } catch (let err) {
-          self.presentBottomAlert(err.localizedDescription)
-          debugPrint(err.localizedDescription)
-        }
-      case .failure(let err):
-        self.presentBottomAlert(err.localizedDescription)
-        debugPrint(err.localizedDescription)
-      }
-    }
-  }
-}
-
-extension MigratedLoginViewController: ASAuthorizationControllerPresentationContextProviding,
-  ASAuthorizationControllerDelegate
-{
-  func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
-    return self.view.window!
-  }
-
-  // Apple ID 연동 성공 시
-  func authorizationController(
-    controller: ASAuthorizationController,
-    didCompleteWithAuthorization authorization: ASAuthorization
-  ) {
-    switch authorization.credential {
-    // Apple ID
-    case let appleIDCredential as ASAuthorizationAppleIDCredential:
-
-      // 계정 정보 가져오기
-      let userIdentifier = appleIDCredential.user
-      let fullName = appleIDCredential.fullName
-      let email = appleIDCredential.email
-      let idToken = appleIDCredential.identityToken!
-      let tokeStr = String(data: idToken, encoding: .utf8)
-
-      self.postAppleLoginRequest(token: tokeStr ?? "")
-      debugPrint("User ID : \(userIdentifier)")
-      debugPrint("User Email : \(email ?? "")")
-      debugPrint("User Name : \((fullName?.givenName ?? "") + (fullName?.familyName ?? ""))")
-      debugPrint("token : \(String(describing: tokeStr))")
-
-    default:
-      break
-    }
-  }
-
-  // Apple ID 연동 실패 시
-  func authorizationController(
-    controller: ASAuthorizationController, didCompleteWithError error: Error
-  ) {
-    debugPrint("Login in Fail.")
+  private func lookingWithNoSignInButtonDidTapped() {
+    self.changeRootVCIntoHomeVC()
   }
 }
