@@ -91,6 +91,16 @@
 		7B732BE82B08E76000474A35 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B732BE72B08E76000474A35 /* NetworkMonitor.swift */; };
 		7B732BEA2B08FB3000474A35 /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B732BE92B08FB3000474A35 /* Weekday.swift */; };
 		7B76EB9E2B01433F00D4F439 /* AuthInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B76EB9D2B01433F00D4F439 /* AuthInterceptor.swift */; };
+		7B7E7C6E2C2577E6004AFA89 /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E7C6D2C2577E6004AFA89 /* A.swift */; };
+		7B7E7C702C2577ED004AFA89 /* B.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E7C6F2C2577ED004AFA89 /* B.swift */; };
+		7B7E7C722C2577F0004AFA89 /* C.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E7C712C2577F0004AFA89 /* C.swift */; };
+		7B7E7C742C2577F3004AFA89 /* D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E7C732C2577F3004AFA89 /* D.swift */; };
+		7B7E7C762C257802004AFA89 /* E.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E7C752C257802004AFA89 /* E.swift */; };
+		7B7E7C7A2C257810004AFA89 /* H.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E7C792C257810004AFA89 /* H.swift */; };
+		7B7E7C7C2C257813004AFA89 /* G.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E7C7B2C257813004AFA89 /* G.swift */; };
+		7B7E7C7E2C257816004AFA89 /* F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E7C7D2C257816004AFA89 /* F.swift */; };
+		7B7E7C802C25781C004AFA89 /* J.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E7C7F2C25781C004AFA89 /* J.swift */; };
+		7B906AF42A1B849D00E4B6A9 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B906AF32A1B849D00E4B6A9 /* MyPageViewController.swift */; };
 		7B9363FD2A9E35CC00D93518 /* RestaurantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9363FC2A9E35CC00D93518 /* RestaurantInfoViewController.swift */; };
 		7B98992E29E04F1300D1A076 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98992D29E04F1300D1A076 /* ReviewViewController.swift */; };
 		7B9899C32A154F9800D1A076 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9899C22A154F9800D1A076 /* Config.swift */; };
@@ -171,6 +181,10 @@
 		DA58AD882C28E2E0003F01DE /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DA58AD852C28E2E0003F01DE /* Debug.xcconfig */; };
 		DA58AD892C28E2E0003F01DE /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DA58AD862C28E2E0003F01DE /* Release.xcconfig */; };
 		DA5F4B702C192CA8009469C4 /* BaseUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */; };
+		DA8138172C26CC3B000612EC /* MigratedLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8138162C26CC3B000612EC /* MigratedLoginView.swift */; };
+		DA8138192C26CC4D000612EC /* MigratedLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8138182C26CC4D000612EC /* MigratedLoginViewController.swift */; };
+		DA81381B2C26CC78000612EC /* MigratedSetNickNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA81381A2C26CC78000612EC /* MigratedSetNickNameView.swift */; };
+		DA81381D2C26CC87000612EC /* MigratedSetNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA81381C2C26CC87000612EC /* MigratedSetNickNameViewController.swift */; };
 		DA8138032C26C4E1000612EC /* MyPageServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137F22C26C4E1000612EC /* MyPageServiceCell.swift */; };
 		DA8138042C26C4E1000612EC /* MyPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137F42C26C4E1000612EC /* MyPageModel.swift */; };
 		DA8138052C26C4E1000612EC /* DeleteAccountConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8137F62C26C4E1000612EC /* DeleteAccountConfirmationView.swift */; };
@@ -264,6 +278,16 @@
 		7B732BE72B08E76000474A35 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		7B732BE92B08FB3000474A35 /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
 		7B76EB9D2B01433F00D4F439 /* AuthInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInterceptor.swift; sourceTree = "<group>"; };
+		7B7E7C6D2C2577E6004AFA89 /* A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A.swift; sourceTree = "<group>"; };
+		7B7E7C6F2C2577ED004AFA89 /* B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B.swift; sourceTree = "<group>"; };
+		7B7E7C712C2577F0004AFA89 /* C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C.swift; sourceTree = "<group>"; };
+		7B7E7C732C2577F3004AFA89 /* D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D.swift; sourceTree = "<group>"; };
+		7B7E7C752C257802004AFA89 /* E.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E.swift; sourceTree = "<group>"; };
+		7B7E7C792C257810004AFA89 /* H.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H.swift; sourceTree = "<group>"; };
+		7B7E7C7B2C257813004AFA89 /* G.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = G.swift; sourceTree = "<group>"; };
+		7B7E7C7D2C257816004AFA89 /* F.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F.swift; sourceTree = "<group>"; };
+		7B7E7C7F2C25781C004AFA89 /* J.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J.swift; sourceTree = "<group>"; };
+		7B906AF32A1B849D00E4B6A9 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		7B9363FC2A9E35CC00D93518 /* RestaurantInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoViewController.swift; sourceTree = "<group>"; };
 		7B98992D29E04F1300D1A076 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		7B9899C22A154F9800D1A076 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -332,6 +356,10 @@
 		DA58AD852C28E2E0003F01DE /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		DA58AD862C28E2E0003F01DE /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUINavigationBar.swift; sourceTree = "<group>"; };
+		DA8138162C26CC3B000612EC /* MigratedLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedLoginView.swift; sourceTree = "<group>"; };
+		DA8138182C26CC4D000612EC /* MigratedLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedLoginViewController.swift; sourceTree = "<group>"; };
+		DA81381A2C26CC78000612EC /* MigratedSetNickNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedSetNickNameView.swift; sourceTree = "<group>"; };
+		DA81381C2C26CC87000612EC /* MigratedSetNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedSetNickNameViewController.swift; sourceTree = "<group>"; };
 		DA8137F22C26C4E1000612EC /* MyPageServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageServiceCell.swift; sourceTree = "<group>"; };
 		DA8137F42C26C4E1000612EC /* MyPageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageModel.swift; sourceTree = "<group>"; };
 		DA8137F62C26C4E1000612EC /* DeleteAccountConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAccountConfirmationView.swift; sourceTree = "<group>"; };
@@ -880,6 +908,9 @@
 		DA58AD3B2C28E04A003F01DE /* App */ = {
 			isa = PBXGroup;
 			children = (
+				DA8138122C26CBC9000612EC /* View */,
+				DA8138132C26CBD5000612EC /* ViewModel */,
+				DA81380F2C26CB9B000612EC /* SubViews */,
 				DA58AD392C28E04A003F01DE /* AppDelegate.swift */,
 				DA58AD3A2C28E04A003F01DE /* SceneDelegate.swift */,
 			);
@@ -1133,6 +1164,27 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		DA81380F2C26CB9B000612EC /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				DA8138112C26CBC4000612EC /* View */,
+				DA8138102C26CBBE000612EC /* ViewModel */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		DA8138102C26CBBE000612EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA8138112C26CBC4000612EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA81381A2C26CC78000612EC /* MigratedSetNickNameView.swift */,
+				DA81381C2C26CC87000612EC /* MigratedSetNickNameViewController.swift */,
 		DA8137F32C26C4E1000612EC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1161,6 +1213,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DA8138122C26CBC9000612EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA8138162C26CC3B000612EC /* MigratedLoginView.swift */,
+				DA8138182C26CC4D000612EC /* MigratedLoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA8138132C26CBD5000612EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 		DA8138012C26C4E1000612EC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1374,7 +1440,7 @@
 				7BBD4CF52A765A3000515F67 /* ReviewMenuTypeInfo.swift in Sources */,
 				7B732BEA2B08FB3000474A35 /* Weekday.swift in Sources */,
 				058326662A4D97BC004A295F /* UICollectionViewCell+.swift in Sources */,
-				DA13BCA72C26B0D60083244A /* (null) in Sources */,
+				DA8138192C26CC4D000612EC /* MigratedLoginViewController.swift in Sources */,
 				7B2BBFB2299A29AF00EE0F1F /* UIColor+.swift in Sources */,
 				052555BA2C0DFD3D00D38E34 /* UILabel+.swift in Sources */,
 				7B6E35542B981E95004F00EE /* FirebaseRemoteConfig.swift in Sources */,
@@ -1417,6 +1483,9 @@
 				051CFA602A8B5A040023B3C6 /* ReportViewController.swift in Sources */,
 				7BBD05F22ACD62010078E046 /* UIWindow+.swift in Sources */,
 				056956FD29CB7958002E8CF2 /* ReviewTableCell.swift in Sources */,
+				7B203D3B2B0A1AE700059512 /* ProvisionView.swift in Sources */,
+				056956FF29CB81E2002E8CF2 /* SetRateViewController.swift in Sources */,
+				DA8138172C26CC3B000612EC /* MigratedLoginView.swift in Sources */,
 				056956FF29CB81E2002E8CF2 /* SetRateViewController.swift in Sources */,
 				DA58AD6D2C28E04A003F01DE /* AppDelegate.swift in Sources */,
 				7B9998EB2A8279FC0043C592 /* HomeTimeTabmanController.swift in Sources */,
@@ -1433,6 +1502,8 @@
 				DA58AD7C2C28E04A003F01DE /* MigratedProvisionViewController.swift in Sources */,
 				DA58AD7E2C28E04A003F01DE /* MigratedRequestViewController.swift in Sources */,
 				057C5B332A837BD5007EDE06 /* BaseButton.swift in Sources */,
+				DA81381B2C26CC78000612EC /* MigratedSetNickNameView.swift in Sources */,
+				7BBD4CC12A6FFE0400515F67 /* MyPageServiceCell.swift in Sources */,
 				7BE4E3CF2B00FAAD0009763A /* ReissueRouter.swift in Sources */,
 				0553A8F32BA74F6700159B5D /* FixedReviewRateResponse.swift in Sources */,
 				051F7E6B2A78FD3700CE9F87 /* UIImageView+.swift in Sources */,
@@ -1460,6 +1531,9 @@
 				DA13BCB02C26B1570083244A /* (null) in Sources */,
 				7B9899C32A154F9800D1A076 /* Config.swift in Sources */,
 				057A0B2D2A250C1E00F10B85 /* WriteReviewRouter.swift in Sources */,
+				7B906AF42A1B849D00E4B6A9 /* MyPageViewController.swift in Sources */,
+				7B2BBF98299A1AC400EE0F1F /* SceneDelegate.swift in Sources */,
+				DA81381D2C26CC87000612EC /* MigratedSetNickNameViewController.swift in Sources */,
 				DA58AD7A2C28E04A003F01DE /* MigratedMyReviewViewController.swift in Sources */,
 				0559705B2A16646B00868C42 /* MenuReviewResponse.swift in Sources */,
 				7B732BE82B08E76000474A35 /* NetworkMonitor.swift in Sources */,
