@@ -24,7 +24,7 @@ class MigratedLoginViewModel: NSObject, ObservableObject {
   private let myProvider = MoyaProvider<MyRouter>(plugins: [MoyaLoggingPlugin()])
 
   override init() {
-    if RealmService.shared.getToken() == "" {
+    if RealmService.shared.getToken().isEmpty {
       self.tokenIsExist = false
     } else {
       self.tokenIsExist = true
@@ -38,9 +38,9 @@ class MigratedLoginViewModel: NSObject, ObservableObject {
     debugPrint(RealmService.shared.getRefreshToken())
   }
 
-  // MARK: - EATSSU Server
+  // MARK: - Network
 
-  private func getUserInfoFromEATSSUServer() {
+  private func getUserInfoFromServer() {
     self.myProvider.request(.myInfo) { response in
       switch response {
       case .success(let moyaResponse):
@@ -112,7 +112,7 @@ extension MigratedLoginViewModel {
             accessToken: responseData.result.accessToken,
             refreshToken: responseData.result.refreshToken
           )
-          self.getUserInfoFromEATSSUServer()
+          self.getUserInfoFromServer()
         } catch (let error) {
           self.error = error
         }
@@ -149,7 +149,7 @@ extension MigratedLoginViewModel: ASAuthorizationControllerDelegate, ASAuthoriza
             accessToken: responseData.result.accessToken,
             refreshToken: responseData.result.refreshToken
           )
-          self.getUserInfoFromEATSSUServer()
+          self.getUserInfoFromServer()
         } catch (let error) {
           self.error = error
         }
