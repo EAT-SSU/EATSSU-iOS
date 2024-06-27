@@ -1494,6 +1494,7 @@
 /* Begin XCBuildConfiguration section */
 		7B2BBFA4299A1AC500EE0F1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BBE03862C26724E00AD6C76 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1554,6 +1555,7 @@
 		};
 		7B2BBFA5299A1AC500EE0F1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6F03DD2C2D920800827EC7 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1608,6 +1610,7 @@
 		};
 		7B2BBFA7299A1AC500EE0F1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BBE03862C26724E00AD6C76 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1647,6 +1650,7 @@
 		};
 		7B2BBFA8299A1AC500EE0F1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6F03DD2C2D920800827EC7 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
