@@ -5,7 +5,6 @@
 //  Created by Jiwoong CHOI on 6/22/24.
 //
 
-import Moya
 import Realm
 import SnapKit
 import Then
@@ -14,9 +13,9 @@ import UIKit
 final class MigratedDeleteAccountConfirmationViewController: BaseViewController {
   // MARK: - Properties
 
+  private var viewModel = MigratedDeleteConfirmationViewModel()
   private var nickName = String()
-  var currentKeyboardHeight: CGFloat = 0.0
-  private let myProvider = MoyaProvider<MyRouter>(plugins: [MoyaLoggingPlugin()])
+  private var currentKeyboardHeight: CGFloat = 0.0
 
   // MARK: - UI Components
 
@@ -63,7 +62,17 @@ final class MigratedDeleteAccountConfirmationViewController: BaseViewController 
   // MARK: - Button Action Methods
 
   @objc private func tappedCompleteNickNameButton() {
-    deleteUser()
+    self.viewModel.deleteUser {
+      let loginViewController = LoginViewController()
+      if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+         let keyWindow = windowScene.windows.first(where: { $0.isKeyWindow })
+      {
+        keyWindow.replaceRootViewController(
+          UINavigationController(rootViewController: loginViewController),
+          animated: true,
+          completion: nil)
+      }
+    }
   }
 
   // MARK: - Some Methods
@@ -110,43 +119,7 @@ final class MigratedDeleteAccountConfirmationViewController: BaseViewController 
   }
 
   @objc private func keyboardWillHide(_ notification: Notification) {
-    // 옵셔널 바인딩으로 생성된 keyboardSize 변수를 제거할 필요. 최초 작성자가 개선 후 공유.
-    if let keyboardSize =
-      (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
-    {
-      deleteAccountView.completeSignOutButton.frame.origin.y += currentKeyboardHeight
-      currentKeyboardHeight = 0.0
-    }
-  }
-}
-
-// MARK: - Server
-
-extension MigratedDeleteAccountConfirmationViewController {
-  private func deleteUser() {
-    self.myProvider.request(.signOut) { response in
-      switch response {
-      case .success(let moyaResponse):
-        do {
-          let responseData = try moyaResponse.map(BaseResponse<Bool>.self)
-          if responseData.result {
-            RealmService.shared.resetDB()
-            let loginViewController = LoginViewController()
-            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-              let keyWindow = windowScene.windows.first(where: { $0.isKeyWindow })
-            {
-              keyWindow.replaceRootViewController(
-                UINavigationController(rootViewController: loginViewController),
-                animated: true,
-                completion: nil)
-            }
-          }
-        } catch (let err) {
-          print(err.localizedDescription)
-        }
-      case .failure(let err):
-        print(err.localizedDescription)
-      }
-    }
+    deleteAccountView.completeSignOutButton.frame.origin.y += currentKeyboardHeight
+    currentKeyboardHeight = 0.0
   }
 }
