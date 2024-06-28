@@ -112,27 +112,24 @@ final class MigratedSetNickNameView: BaseUIView {
 extension MigratedSetNickNameView: UITextFieldDelegate {
 
   /// return 클릭 시, 키보드 내려감
-
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     textField.resignFirstResponder()
     return true
   }
 
-  /// textFiled 유효성 검사
-
+  /// textField 유효성 검사
   func textFieldDidChangeSelection(_ textField: UITextField) {
 
     guard let inputValue = textField.text?.trimmingCharacters(in: .whitespaces) else { return }
 
     if inputValue.isEmpty {
-      textFieldSettingWhenEmpty(textField)
+      self.textFieldSettingWhenEmpty(textField)
       return
     }
-    checkNicknameValidation(textField)
+    self.checkNicknameValidation(textField)
   }
 
   /// clearButton delegate
-
   func textFieldShouldClear(_ textField: UITextField) -> Bool {
     nicknameDoubleCheckButton.isEnabled = false
     completeSettingNickNameButton.isEnabled = false
@@ -141,12 +138,11 @@ extension MigratedSetNickNameView: UITextFieldDelegate {
 
 }
 
-// MARK: - Validation userInfo
+// MARK: - Validation User Information
 
 extension MigratedSetNickNameView {
 
   /// 입력 없는 경우
-
   fileprivate func textFieldSettingWhenEmpty(_ textField: UITextField) {
 
     nicknameValidationMessageLabel.text = NicknameTextFieldResultType.textFieldEmpty.hintMessage
@@ -154,7 +150,6 @@ extension MigratedSetNickNameView {
   }
 
   /// 닉네임 형식 검사
-
   fileprivate func checkNicknameValidation(_ textField: UITextField) {
 
     if let userNickname = textField.text {
@@ -173,7 +168,6 @@ extension MigratedSetNickNameView {
   }
 
   /// Input 변경 시
-
   fileprivate func nicknameInputChanged(nickname: String) -> Bool {
 
     /// 텍스트 변경 시, 완료하기 버튼 false 처리
