@@ -179,6 +179,7 @@
 		DA6F04132C2D928600827EC7 /* MigratedMyPageServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F04042C2D928600827EC7 /* MigratedMyPageServiceCell.swift */; };
 		DA6F04142C2D928600827EC7 /* MigratedMyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F04052C2D928600827EC7 /* MigratedMyPageView.swift */; };
 		DA6F04152C2D928600827EC7 /* MigratedMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F04062C2D928600827EC7 /* MigratedMyPageViewController.swift */; };
+		DA744B4A2C2EB03300B67986 /* MigratedReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA744B492C2EB03300B67986 /* MigratedReviewViewModel.swift */; };
 		DA83B3E82C18587200F41DB8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA83B3E72C18587200F41DB8 /* RealmSwift */; };
 		DAACFF042C244BDC00763006 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF032C244BDC00763006 /* RxCocoa */; };
 		DAACFF062C244BDC00763006 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF052C244BDC00763006 /* RxSwift */; };
@@ -347,6 +348,7 @@
 		DA6F04042C2D928600827EC7 /* MigratedMyPageServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MigratedMyPageServiceCell.swift; sourceTree = "<group>"; };
 		DA6F04052C2D928600827EC7 /* MigratedMyPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MigratedMyPageView.swift; sourceTree = "<group>"; };
 		DA6F04062C2D928600827EC7 /* MigratedMyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MigratedMyPageViewController.swift; sourceTree = "<group>"; };
+		DA744B492C2EB03300B67986 /* MigratedReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedReviewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1147,6 +1149,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6F03F62C2D928600827EC7 /* View */,
+				DA744B482C2EB02300B67986 /* ViewModel */,
 			);
 			path = MyReview;
 			sourceTree = "<group>";
@@ -1224,6 +1227,14 @@
 				DA6F04002C2D928600827EC7 /* SubViews */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		DA744B482C2EB02300B67986 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA744B492C2EB03300B67986 /* MigratedReviewViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1450,6 +1461,7 @@
 				7B9999092A8627540043C592 /* MenuTypeInfo.swift in Sources */,
 				7B76EB9E2B01433F00D4F439 /* AuthInterceptor.swift in Sources */,
 				0569570C29CE1A71002E8CF2 /* WriteReviewViewController.swift in Sources */,
+				DA744B4A2C2EB03300B67986 /* MigratedReviewViewModel.swift in Sources */,
 				DA6F03EF2C2D927E00827EC7 /* MigratedLoginViewModel.swift in Sources */,
 				057A0ACF2A1D3EEF00F10B85 /* WriteReviewRequest.swift in Sources */,
 				057A0AC92A1B498300F10B85 /* ReviewRouter.swift in Sources */,

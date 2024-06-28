@@ -5,7 +5,6 @@
 //  Created by Jiwoong CHOI on 6/22/24.
 //
 
-import Moya
 import SnapKit
 import Then
 import UIKit
@@ -13,12 +12,9 @@ import UIKit
 final class MigratedMyReviewViewController: BaseViewController {
   // MARK: - Properties
 
-  private let myProvider = MoyaProvider<MyRouter>(plugins: [MoyaLoggingPlugin()])
-  private let reviewProvider = MoyaProvider<ReviewRouter>(plugins: [MoyaLoggingPlugin()])
-
-  private var reviewList = [MyDataList]()
-  var nickname: String = .init()
+  private var nickname: String = .init()
   private var menuName: String = .init()
+  private var viewModel = MigratedReviewViewModel()
 
   // MARK: - UI Components
 
@@ -35,15 +31,16 @@ final class MigratedMyReviewViewController: BaseViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    self.setDelegate()
-    self.checkReviewCount()
+    setDelegate()
+    viewModelCheckReviewCount()
   }
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-
-    self.getMyReview()
+    viewModel.getMyReview {
+      self.viewModelCheckReviewCount()
+      self.myReviewView.myReviewTableView.reloadData()
+    }
   }
 
   // MARK: - UI Configuration
@@ -76,18 +73,10 @@ final class MigratedMyReviewViewController: BaseViewController {
 
   // MARK: - Some Methods
 
-  // 해당 메소드는 호출된 부분이 없음. 최초 작성자가 확인 후 공유.
-  func dataBind(nikcname: String) {
-    nickname = nikcname
-  }
-
-  private func checkReviewCount() {
-    if reviewList.count == 0 {
-      myReviewView.myReviewTableView.isHidden = true
-      noMyReviewImageView.isHidden = false
-    } else {
-      myReviewView.myReviewTableView.isHidden = false
-      noMyReviewImageView.isHidden = true
+  private func viewModelCheckReviewCount() {
+    viewModel.checkReviewCount { myReviewTableViewStatus, noMyReviewImageViewStatus in
+      self.myReviewView.myReviewTableView.isHidden = myReviewTableViewStatus
+      self.noMyReviewImageView.isHidden = noMyReviewImageViewStatus
     }
   }
 }
@@ -102,20 +91,18 @@ extension MigratedMyReviewViewController: UITableViewDelegate {
 
 extension MigratedMyReviewViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return reviewList.count
+    return viewModel.reviewList.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell =
       tableView.dequeueReusableCell(withIdentifier: ReviewTableCell.identifier, for: indexPath)
-      as? ReviewTableCell ?? ReviewTableCell()
-    cell.myPageDataBind(response: reviewList[indexPath.row], nickname: nickname)
+        as? ReviewTableCell ?? ReviewTableCell()
+    cell.myPageDataBind(response: viewModel.reviewList[indexPath.row], nickname: nickname)
     cell.handler = { [weak self] in
-      guard let self else { return }
-      menuName = reviewList[indexPath.row].menuName
-      self.showFixOrDeleteAlert(
-        reviewID: cell.reviewId,
-        menuName: menuName)
+      guard let self = self else { return }
+      menuName = viewModel.reviewList[indexPath.row].menuName
+      self.showFixOrDeleteAlert(reviewID: cell.reviewId, menuName: menuName)
     }
     cell.selectionStyle = .none
     return cell
@@ -126,7 +113,7 @@ extension MigratedMyReviewViewController: UITableViewDataSource {
     let alert = UIAlertController(
       title: "리뷰 수정 혹은 삭제",
       message: "작성하신 리뷰를 수정 또는 삭제하시겠습니까?",
-      preferredStyle: UIAlertController.Style.actionSheet)
+      preferredStyle: .actionSheet)
 
     let fixAction = UIAlertAction(
       title: "수정하기",
@@ -141,7 +128,13 @@ extension MigratedMyReviewViewController: UITableViewDataSource {
       title: "삭제하기",
       style: .default,
       handler: { _ in
-        self.deleteReview(reviewID: reviewID)
+        self.viewModel.deleteReview(reviewID: reviewID) {
+          self.viewModel.getMyReview {
+            self.viewModelCheckReviewCount()
+            self.myReviewView.myReviewTableView.reloadData()
+          }
+          self.view.showToast(message: "삭제되었어요 !")
+        }
       })
 
     let cancelAction = UIAlertAction(
@@ -153,39 +146,5 @@ extension MigratedMyReviewViewController: UITableViewDataSource {
     alert.addAction(deleteAction)
     alert.addAction(cancelAction)
     present(alert, animated: true, completion: nil)
-  }
-}
-
-// MARK: - Server
-
-extension MigratedMyReviewViewController {
-  private func getMyReview() {
-    myProvider.request(.myReview) { response in
-      switch response {
-      case .success(let moyaResponse):
-        do {
-          let responseData = try moyaResponse.map(BaseResponse<MyReviewResponse>.self)
-          self.reviewList = responseData.result.dataList
-          self.checkReviewCount()
-          self.myReviewView.myReviewTableView.reloadData()
-        } catch (let err) {
-          print(err.localizedDescription)
-        }
-      case .failure(let err):
-        print(err.localizedDescription)
-      }
-    }
-  }
-
-  private func deleteReview(reviewID: Int) {
-    reviewProvider.request(.deleteReview(reviewID)) { response in
-      switch response {
-      case .success:
-        self.getMyReview()
-        self.view.showToast(message: "삭제되었어요 !")
-      case .failure(let err):
-        print(err.localizedDescription)
-      }
-    }
   }
 }
