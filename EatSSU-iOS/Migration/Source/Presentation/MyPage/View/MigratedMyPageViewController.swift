@@ -14,7 +14,7 @@ import UIKit
 
 final class MigratedMyPageViewController: BaseViewController {
   // MARK: - Properties
-
+  private var viewModel = MigratedMyPageViewModel()
   private let myProvider = MoyaProvider<MyRouter>(plugins: [MoyaLoggingPlugin()])
   private var nickName = String()
 
@@ -33,8 +33,12 @@ final class MigratedMyPageViewController: BaseViewController {
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-
-    self.getMyInfo()
+    self.viewModel.getMyInfo { result, nickName in
+      DispatchQueue.main.async {
+        self.mypageView.dataBind(model: result)
+        self.nickName = nickName
+      }
+    }
   }
 
   // MARK: - UI Configuration
@@ -70,27 +74,6 @@ final class MigratedMyPageViewController: BaseViewController {
   func didTappedChangeNicknameButton() {
     let setNickNameVC = SetNickNameViewController()
     navigationController?.pushViewController(setNickNameVC, animated: true)
-  }
-}
-
-// MARK: - Server
-
-extension MigratedMyPageViewController {
-  private func getMyInfo() {
-    myProvider.request(.myInfo) { response in
-      switch response {
-      case .success(let moyaResponse):
-        do {
-          let responseData = try moyaResponse.map(BaseResponse<MyInfoResponse>.self)
-          self.mypageView.dataBind(model: responseData.result)
-          self.nickName = responseData.result.nickname ?? ""
-        } catch (let err) {
-          print(err.localizedDescription)
-        }
-      case .failure(let err):
-        print(err.localizedDescription)
-      }
-    }
   }
 }
 

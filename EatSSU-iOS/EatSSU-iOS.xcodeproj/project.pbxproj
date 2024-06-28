@@ -157,6 +157,7 @@
 		DA3640202C2E5CF0007EF64F /* MyReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3640122C2E5CF0007EF64F /* MyReviewViewController.swift */; };
 		DA3640212C2E5CF0007EF64F /* ProvisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3640132C2E5CF0007EF64F /* ProvisionViewController.swift */; };
 		DA3640222C2E5CF0007EF64F /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3640142C2E5CF0007EF64F /* RequestViewController.swift */; };
+		DA3640252C2E7498007EF64F /* MigratedMyPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3640242C2E7498007EF64F /* MigratedMyPageViewModel.swift */; };
 		DA5F4B702C192CA8009469C4 /* BaseUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */; };
 		DA6F03DE2C2D920800827EC7 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DA6F03DD2C2D920800827EC7 /* Release.xcconfig */; };
 		DA6F03EB2C2D927E00827EC7 /* MigratedSetNickNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F03E02C2D927E00827EC7 /* MigratedSetNickNameView.swift */; };
@@ -323,6 +324,7 @@
 		DA3640122C2E5CF0007EF64F /* MyReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReviewViewController.swift; sourceTree = "<group>"; };
 		DA3640132C2E5CF0007EF64F /* ProvisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisionViewController.swift; sourceTree = "<group>"; };
 		DA3640142C2E5CF0007EF64F /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		DA3640242C2E7498007EF64F /* MigratedMyPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedMyPageViewModel.swift; sourceTree = "<group>"; };
 		DA5F4B6F2C192CA8009469C4 /* BaseUINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUINavigationBar.swift; sourceTree = "<group>"; };
 		DA6F03DD2C2D920800827EC7 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		DA6F03E02C2D927E00827EC7 /* MigratedSetNickNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MigratedSetNickNameView.swift; sourceTree = "<group>"; };
@@ -1051,6 +1053,14 @@
 			path = MyPage;
 			sourceTree = "<group>";
 		};
+		DA3640232C2E748A007EF64F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA3640242C2E7498007EF64F /* MigratedMyPageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		DA6F03E22C2D927E00827EC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1199,6 +1209,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6F04072C2D928600827EC7 /* View */,
+				DA3640232C2E748A007EF64F /* ViewModel */,
 				DA6F04002C2D928600827EC7 /* SubViews */,
 			);
 			path = MyPage;
@@ -1359,6 +1370,7 @@
 				0588407D2A80E2A90007AA98 /* MyReviewResponse.swift in Sources */,
 				DA6F03EE2C2D927E00827EC7 /* MigratedLoginViewController.swift in Sources */,
 				7B9999252A8C03320043C592 /* String.swift in Sources */,
+				DA3640252C2E7498007EF64F /* MigratedMyPageViewModel.swift in Sources */,
 				057A0B312A273DDF00F10B85 /* MoyaPluggin.swift in Sources */,
 				057A0B252A22284400F10B85 /* SignResponse.swift in Sources */,
 				7B51C5A12A6322D60016B418 /* DataTypeProtocol.swift in Sources */,
