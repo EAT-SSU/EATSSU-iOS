@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk.git",
       "state" : {
-        "revision" : "03189348b7798fe94b892a35883f1dc745814fe0",
-        "version" : "10.28.0"
+        "revision" : "e57841b296d04370ea23580f908881b0ccab17b9",
+        "version" : "10.28.1"
       }
     },
     {
@@ -87,8 +87,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/gtm-session-fetcher.git",
       "state" : {
-        "revision" : "0382ca27f22fb3494cf657d8dc356dc282cd1193",
-        "version" : "3.4.1"
+        "revision" : "a2ab612cb980066ee56d90d60d8462992c07f24b",
+        "version" : "3.5.0"
       }
     },
     {
@@ -106,7 +106,7 @@
       "location" : "https://github.com/kakao/kakao-ios-sdk",
       "state" : {
         "branch" : "master",
-        "revision" : "9f9b830dfd7ee66607c6fddcfeb1a6bc07e48714"
+        "revision" : "e9e649d3ba823c3673867d3d09010fc77005a940"
       }
     },
     {
@@ -193,7 +193,7 @@
     {
       "identity" : "rxswift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "location" : "https://github.com/ReactiveX/RxSwift",
       "state" : {
         "revision" : "b06a8c8596e4c3e8e7788e08e720e3248563ce6a",
         "version" : "6.7.1"
