@@ -181,6 +181,7 @@
 		DA6F04152C2D928600827EC7 /* MigratedMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F04062C2D928600827EC7 /* MigratedMyPageViewController.swift */; };
 		DA744B4A2C2EB03300B67986 /* MigratedReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA744B492C2EB03300B67986 /* MigratedReviewViewModel.swift */; };
 		DA83B3E82C18587200F41DB8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA83B3E72C18587200F41DB8 /* RealmSwift */; };
+		DA85BDCD2C2F8A5900AB5B52 /* MigratedProvisionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85BDCC2C2F8A5900AB5B52 /* MigratedProvisionViewModel.swift */; };
 		DAACFF042C244BDC00763006 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF032C244BDC00763006 /* RxCocoa */; };
 		DAACFF062C244BDC00763006 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF052C244BDC00763006 /* RxSwift */; };
 		DAC1DF692C18FE6F00AEDDD3 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1DF682C18FE6F00AEDDD3 /* SwiftFormat */; };
@@ -349,6 +350,7 @@
 		DA6F04052C2D928600827EC7 /* MigratedMyPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MigratedMyPageView.swift; sourceTree = "<group>"; };
 		DA6F04062C2D928600827EC7 /* MigratedMyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MigratedMyPageViewController.swift; sourceTree = "<group>"; };
 		DA744B492C2EB03300B67986 /* MigratedReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedReviewViewModel.swift; sourceTree = "<group>"; };
+		DA85BDCC2C2F8A5900AB5B52 /* MigratedProvisionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedProvisionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1167,6 +1169,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6F03FA2C2D928600827EC7 /* View */,
+				DA85BDCB2C2F8A4500AB5B52 /* ViewModel */,
 			);
 			path = Provision;
 			sourceTree = "<group>";
@@ -1233,6 +1236,14 @@
 			isa = PBXGroup;
 			children = (
 				DA744B492C2EB03300B67986 /* MigratedReviewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA85BDCB2C2F8A4500AB5B52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA85BDCC2C2F8A5900AB5B52 /* MigratedProvisionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1410,6 +1421,7 @@
 				056956BB29C0D8BF002E8CF2 /* L_UIFont+.swift in Sources */,
 				7B9998F92A838FEC0043C592 /* RestaurantTableViewMenuCell.swift in Sources */,
 				7B2C9E9729DEE7B20007603D /* UITextField+.swift in Sources */,
+				DA85BDCD2C2F8A5900AB5B52 /* MigratedProvisionViewModel.swift in Sources */,
 				DA6F040C2C2D928600827EC7 /* MigratedMyReviewViewController.swift in Sources */,
 				7BF5CC102A49F24F00E4EE11 /* UIButton+.swift in Sources */,
 				7B9998F72A838EF70043C592 /* BaseTableViewCell.swift in Sources */,
