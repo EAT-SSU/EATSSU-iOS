@@ -182,6 +182,7 @@
 		DA744B4A2C2EB03300B67986 /* MigratedReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA744B492C2EB03300B67986 /* MigratedReviewViewModel.swift */; };
 		DA83B3E82C18587200F41DB8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA83B3E72C18587200F41DB8 /* RealmSwift */; };
 		DA85BDCD2C2F8A5900AB5B52 /* MigratedProvisionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85BDCC2C2F8A5900AB5B52 /* MigratedProvisionViewModel.swift */; };
+		DA85BDD02C2F8F6900AB5B52 /* MigratedRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85BDCF2C2F8F6900AB5B52 /* MigratedRequestViewModel.swift */; };
 		DAACFF042C244BDC00763006 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF032C244BDC00763006 /* RxCocoa */; };
 		DAACFF062C244BDC00763006 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF052C244BDC00763006 /* RxSwift */; };
 		DAC1DF692C18FE6F00AEDDD3 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1DF682C18FE6F00AEDDD3 /* SwiftFormat */; };
@@ -351,6 +352,7 @@
 		DA6F04062C2D928600827EC7 /* MigratedMyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MigratedMyPageViewController.swift; sourceTree = "<group>"; };
 		DA744B492C2EB03300B67986 /* MigratedReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedReviewViewModel.swift; sourceTree = "<group>"; };
 		DA85BDCC2C2F8A5900AB5B52 /* MigratedProvisionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedProvisionViewModel.swift; sourceTree = "<group>"; };
+		DA85BDCF2C2F8F6900AB5B52 /* MigratedRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratedRequestViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1187,6 +1189,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6F03FE2C2D928600827EC7 /* View */,
+				DA85BDCE2C2F8F5600AB5B52 /* ViewModel */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1246,6 +1249,15 @@
 				DA85BDCC2C2F8A5900AB5B52 /* MigratedProvisionViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA85BDCE2C2F8F5600AB5B52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA85BDCF2C2F8F6900AB5B52 /* MigratedRequestViewModel.swift */,
+			);
+			name = ViewModel;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1460,6 +1472,7 @@
 				DA363FE42C2E286E007EF64F /* MigratedSetNicknameViewModel.swift in Sources */,
 				7B9998F32A836E660043C592 /* RestaurantTableViewHeader.swift in Sources */,
 				7B2BBFB4299A29DC00EE0F1F /* UIViewController+.swift in Sources */,
+				DA85BDD02C2F8F6900AB5B52 /* MigratedRequestViewModel.swift in Sources */,
 				7B2C9E9B29DF3B4A0007603D /* ImageLiteral.swift in Sources */,
 				DA3640202C2E5CF0007EF64F /* MyReviewViewController.swift in Sources */,
 				0540F10E2B7A08790075C7B0 /* BaseResponse.swift in Sources */,
