@@ -179,8 +179,6 @@
 		DA83B3E82C18587200F41DB8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA83B3E72C18587200F41DB8 /* RealmSwift */; };
 		DAACFF042C244BDC00763006 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF032C244BDC00763006 /* RxCocoa */; };
 		DAACFF062C244BDC00763006 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAACFF052C244BDC00763006 /* RxSwift */; };
-		DAC1DF692C18FE6F00AEDDD3 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1DF682C18FE6F00AEDDD3 /* SwiftFormat */; };
-		DAC1DF6B2C18FE6F00AEDDD3 /* SwiftFormatConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1DF6A2C18FE6F00AEDDD3 /* SwiftFormatConfiguration */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -353,9 +351,7 @@
 				DAACFF062C244BDC00763006 /* RxSwift in Frameworks */,
 				7BD73CD429D208940076DC77 /* Then in Frameworks */,
 				051F7E6E2A78FD8500CE9F87 /* Kingfisher in Frameworks */,
-				DAC1DF6B2C18FE6F00AEDDD3 /* SwiftFormatConfiguration in Frameworks */,
 				7B2BBFB0299A291A00EE0F1F /* SnapKit in Frameworks */,
-				DAC1DF692C18FE6F00AEDDD3 /* SwiftFormat in Frameworks */,
 				056956C229C0DB55002E8CF2 /* Moya in Frameworks */,
 				05077DC12BB495E900017346 /* GoogleAppMeasurement in Frameworks */,
 				7B6B73CB2BBC789300D11D73 /* KakaoSDKUser in Frameworks */,
@@ -1228,8 +1224,6 @@
 				7B6B73C82BBC789300D11D73 /* KakaoSDKCommon */,
 				7B6B73CA2BBC789300D11D73 /* KakaoSDKUser */,
 				DA83B3E72C18587200F41DB8 /* RealmSwift */,
-				DAC1DF682C18FE6F00AEDDD3 /* SwiftFormat */,
-				DAC1DF6A2C18FE6F00AEDDD3 /* SwiftFormatConfiguration */,
 				DAACFF032C244BDC00763006 /* RxCocoa */,
 				DAACFF052C244BDC00763006 /* RxSwift */,
 			);
@@ -1272,7 +1266,6 @@
 				7B6E35452B91C06B004F00EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				05077DBF2BB495E800017346 /* XCRemoteSwiftPackageReference "GoogleAppMeasurement" */,
 				DA83B3E62C18587200F41DB8 /* XCRemoteSwiftPackageReference "realm-swift" */,
-				DAC1DF672C18FE6F00AEDDD3 /* XCRemoteSwiftPackageReference "swift-format" */,
 				DAACFF022C244BDC00763006 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 7B2BBF93299A1AC400EE0F1F /* Products */;
@@ -1799,14 +1792,6 @@
 				minimumVersion = 6.7.1;
 			};
 		};
-		DAC1DF672C18FE6F00AEDDD3 /* XCRemoteSwiftPackageReference "swift-format" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-format";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 510.1.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1896,16 +1881,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DAACFF022C244BDC00763006 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
-		};
-		DAC1DF682C18FE6F00AEDDD3 /* SwiftFormat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DAC1DF672C18FE6F00AEDDD3 /* XCRemoteSwiftPackageReference "swift-format" */;
-			productName = SwiftFormat;
-		};
-		DAC1DF6A2C18FE6F00AEDDD3 /* SwiftFormatConfiguration */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DAC1DF672C18FE6F00AEDDD3 /* XCRemoteSwiftPackageReference "swift-format" */;
-			productName = SwiftFormatConfiguration;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
